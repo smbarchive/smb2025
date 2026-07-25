@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "OTHE"
+subgroup-long: "OTHE-10"
+title: "Emerging areas in Mathematical Biology: Celebrating research from the Mathematical Biosciences Institute"
+organizers: "Veronica Ciocanel (Duke University), Hye-Won Kang, University of Maryland Baltimore County"
+description: "This minisymposium aims to highlight recent advances in emerging areas and novel mathematical approaches for addressing biological questions. The sessions will cover a broad spectrum of themes that integrate data-driven mathematical modeling and real-world applications. Topics covered include advances in stochastic and continuum modeling of molecular and regulatory mechanisms in cells, network dynamics in infectious disease and ecological systems, and data-driven methods for sleep homeostasis and disorders. These sessions will also celebrate the impactful mathematical biology research of former Mathematical Biosciences Institute (MBI) postdocs and visitors whose career was influenced by their time and connections made while at the MBI."
+room: "Salon 3"
+code: "MS03"
+part: "2"
+codes: [MS02/MS-OTHE-10-Part-1]
+author1: "Grzegorz Rempala"
+title1: "Modeling Epidemics on Networks"
+inst1: "The Ohio State University"
+dept1: ""
+abstract1: "This talk presents an overview of recent advances in modeling epidemic dynamics on networks, with a focus on pairwise and edge-based formulations of SIR-type processes on random graphs. I will outline a systematic framework for deriving and analyzing models across multiple levels of complexity, emphasizing the role of closure and approximation techniques. Particular attention will be given to conditions under which models become exact or analytically tractable, and to clarifying how commonly used heuristic models relate to their rigorous mathematical foundations."
+author2: "Paul Hurtado"
+title2: "SIER-type ODE models with phase-type latent and infectious period distributions"
+inst2: " University of Nevada, Reno"
+dept2: ""
+abstract2: "SEIR-type ODE models can be viewed as a mean-field model corresponding to (often unspecified) individual-based stochastic model. These typically assume that the latent and infectious periods follow exponential distributions, or Erlang (gamma) distributions, if formulated using the linear chain trick (LCT).  SEIR models based on the generalized linear chain trick (GLCT) expand these assumptions to possibly include the much broader class of 'phase-type' distributions, which can be thought of as the absorption time distributions for finite-state Continuous Time Markov Chains. These include Coxian distributions, hypoexponential (generalized Erlang) distributions, and mixtures of these distributions. In this talk, I will present some preliminary explorations of how SEIR-type model behaviors change when we replace those traditional (exponential or Erlang) distribution assumptions for the latent and infectious period distributions with these more flexible alternatives. I'll also discuss implications for the empirical estimation of these distributions in applications."
+author3: "Deena Schmidt"
+title3: "Modeling network formation in ecological systems"
+inst3: " University of Nevada, Reno"
+dept3: ""
+abstract3: "Understanding how networks form and evolve is an important question in many fields such as ecology, epidemiology, economics, and sociology. Studying the mechanisms of network formation can yield insights into which factors are involved in edge formation and network growth. In this talk, I will give an overview of network formation models and then focus on such modeling in ecological systems, specifically thinking about caterpillar-plant interaction networks using data collected from Ecuador. I will discuss two modeling frameworks, the repeated choice model (RCM) and the stochastic actor-oriented model (SAOM). The RCM models network formation as a series of choices, where caterpillars select plants based on observable features such as leaf count. The SAOM focuses on the stochastic choices individuals make and how their choices are influenced by the network structure as well as their own attributes. I will present some preliminary results for the Ecuador interaction networks. This is work in progress with graduate student Andrew Chavez."
+author4: "Wenrui Hao"
+title4: "A Systematic Computational Framework for Practical Identifiability Analysis"
+inst4: "Pennsylvania State University"
+dept4: ""
+abstract4: "Practical identifiability is a fundamental challenge in data-driven modeling of mathematical systems. In this talk, I will present our recent work on a novel framework for practical identifiability analysis, designed to assess parameter identifiability in mathematical models of biological systems. I will begin with a rigorous mathematical definition of practical identifiability and establish its equivalence to the invertibility of the Fisher Information Matrix. Our framework connects practical identifiability with coordinate identifiability, introducing a novel metric that simplifies and accelerates parameter identifiability evaluation compared to the profile likelihood method. Additionally, we incorporate new regularization terms to address non-identifiable parameters, enhancing uncertainty quantification and improving model reliability. To support experimental design, we propose an optimal data collection algorithm that ensures all model parameters are practically identifiable. Applications to Hill functions, neural networks, and dynamic biological models illustrate the framework’s effectiveness in uncovering critical biological processes and identifying key observable variables."
+---

@@ -1,0 +1,37 @@
+---
+layout: group
+author: smb2025
+subgroup: "CDEV"
+subgroup-long: "CDEV-04"
+title: "The unexpected consequences of stochasticity in cell biology"
+organizers: "James Holehouse (The Santa Fe Institute), Kaan Öcal (University of Melbourne) and Augustinas Sukys (University of Melbourne)"
+description: "From molecules to ecosystems, randomness has profound effects on biology at all scales.  Much of the complexity of biological systems lies hidden in stochastic fluctuations and seemingly random interactions, which raises the question: how does noise manifest in biology? What are its functional roles? And how can we best work with noise?  Focusing on the microscopic scale, this mini-symposium will look at the unexpected consequences of noise across the spectrum of cell biology, emphasizing the remarkable role that randomness plays in the rules of life. (Our selected speakers are all early-career researchers working on a diverse variety of topics:)
+
+- Lucy Ham (she/her), postdoc at the University of Melbourne: How cell-to-cell communication and spatial gene regulatory networks govern multicellular organization and pattern formation.
+- Anish Pandya (he/him), undergraduate at UT Austin: Causation vs. correlation in modelling the life of mRNA, from transcription to degradation.
+- Arthur Genthon (he/him), postdoc at the MPI for the Physics of Complex Systems: How cell populations exploit variations in cell size and growth rate to proliferate.
+- Daniel Muratore (they/them), postdoc at the Santa Fe Institute: Stochastic macromolecular dynamics explain biogeographic patterns in the Pacific Ocean."
+room: "Salon 1"
+code: "MS09"
+part: ""
+author1: "Daniel Muratore"
+title1: "Cellular Macromolecular Dynamics Induce Emergent Viral Biogeography in the Pacific Ocean"
+inst1: "Santa Fe Institute"
+dept1: ""
+abstract1: "Viruses are the most numerically abundant biological entity in the ocean, and the success of viral infection is determined by the capacity of their microbial hosts to provide necessary macromolecular machinery to synthesize viral progeny. Stochastic processes governing the relative balance of the nucleic acid and protein production in the infected ‘virocell’ can disrupt viral replication and lead to the production of viral particles packaged with host, as opposed to viral, genomes. This talk will discuss a stochastic process model of viral infection informed by light availability (cellular energy input) that determine cell macromolecular production. We identify regimes under which different viral infection strategies prevail and compare them with known population distributions of marine bacteriophages. Latitudinal shifts in seasonality and average day length unveil a regime shift in viral infection efficacy that corresponds to a rapid restructuring of viral fitnesses, suggesting the sub cellular environment informs global-scale biogeographic trends in microbial pathogens in the ocean."
+author2: "Anish Pandya"
+title2: "Transcriptional noise tunes correlations between stages of the mRNA lifecycle"
+inst2: "UT Austin"
+dept2: "Physics"
+abstract2: "Gene expression is a key process conserved in life. A central goal is to understand complex intracellular processes through construction of gene regulatory networks from biophysical mechanisms. Many models of Eukaryotic gene expression represent biophysical processes such as (multi-)promoter binding, post-transcriptional modifications, and product degradation as transitions between states in a Markov Chain. A key step is from correlations in co-expression data to inferring molecular mechanisms. We demonstrate the converse— deducing the expected Pearson correlation and squared coefficient of variation of mRNA waiting time distributions a priori from models—can pose indistinguishability problems. In particular, if the mRNA waiting time distribution contains combinations of reversible or (effectively) irreversible transitions and or the transcriptional reaction network contains cycles. We characterize the dependence of the mRNA Pearson correlation coefficients and the coefficient of variation on causal properties of transcriptional reaction graphs. With the linear noise approximation, we exactly calculate the expected properties of the covariance, Pearson correlation coefficient, and coefficient of variation. In addition, we investigate the degeneracy of transcriptional waiting time distributions to correlative measurements of post-transcriptional mRNA with few transcriptional gene states. In these models, we show causal relationships do not necessarily entail correlative relationships. To potentially mitigate spurious correlations, we discuss methods to potentially distinguish between causal generating mechanisms based on correlations between post-transcriptional products."
+author3: "Ethan Levien"
+title3: "Gene expression following abrupt antibiotic exposure"
+inst3: "Dartmouth College"
+dept3: "Mathematics"
+abstract3: "Single-cell mother machine experiments have revealed that genetically homogeneous bacterial populations can exhibit divergent cell fates following abrupt antibiotic exposure. The mechanisms underlying this divergence remain unclear, particularly the respective roles of intrinsic and extrinsic factors. Here, we propose a simple model of single-cell gene expression and growth dynamics following sudden drug exposure, grounded in established scaling relations between proteome allocation and growth rate. In this model, resources allocated to the transcription of resistance genes behave analogously to generalized momenta, and their initial variation predicts eventual cell fate. Without parameter fitting, the model recapitulates key experimental observations, including the emergence of distinct phenotypic outcomes and the existence of a critical threshold in TetR production velocity that determines survival. We further derive a scaling law for the critical velocity as a function of external drug concentration, yielding a testable prediction for future experiments."
+author4: "Lucy Ham"
+title4: "Cell fate control in space and time: fundamental limits on spatial organisation in multicellular systems"
+inst4: "University of Melbourne"
+dept4: "BioSciences"
+abstract4: "Genetically identical cells develop and maintain distinct identities over time, despite fluctuations in intracellular and extracellular conditions. This talk examines the mechanisms behind cell fate determination and spatial patterning in multicellular systems. Using spatial stochastic models, we investigate how gene regulatory networks interact with cell-to-cell communication to control cell fate decisions. Our results show that feedback loops and paracrine signalling act as biological switches that trigger transitions from temporary to stable cellular states. We provide mathematical expressions that predict the signalling thresholds needed for these transitions and identify a key physical constraint: the mean size of phenotypic regions scales with the cubic root of signalling strength. This relationship reveals why maintaining large, stable domains requires disproportionately high signalling costs. This work highlights the fundamental trade-offs between pattern stability and signalling efficiency that organisms must balance during development. Our findings contribute to a deeper understanding of the principles governing tissue organisation and multicellular patterning in biological systems."
+---

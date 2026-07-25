@@ -1,0 +1,173 @@
+---
+title: "Cell and Developmental Biology Subgroup (CDEV)"
+layout: default
+pagination:
+    enabled: false
+description: "The Society for Mathematical Biology - Annual Meeting 2025."
+permalink: /CDEV/
+subgroup: "CDEV"
+---
+
+
+<div class="container">
+	
+	<div class="col-md-12 main-loop">
+	    <div class="row">
+	        <div class="col-md-12  text-center">
+		        <h1 class="mb-3">{{page.title}}</h1>
+	        </div>
+	    </div>
+	</div>
+	
+	{% assign minisymposia = site.CDEV-MS | sort: 'code'  %}
+	{% assign contributedtalks = site.CDEV-CT | sort: 'code'  %}
+	{% assign posters = site.CDEV-PS %}
+	
+   	
+		
+	<div class="row mt-3">   
+		<div class="col-md-12 main-loop">
+			{% include subgroup_rooms.html %}
+			{% include jump_to_menu.html %}
+
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem parallel position-relative">
+		    <div class="pl-4 pr-0 h-100 tofront">
+		        <div class="row justify-content-between">
+		            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+		                <h1 class="mb-3" id="MS1">Sub-group minisymposia</h1>
+		                
+		                {% for ms in minisymposia %}
+							<div class="row subgroup-name">
+								<div class="col-12">
+									{% include ms_card.html thisMS=ms %}
+								</div>
+							</div>
+						{% endfor %}
+		            </div>             
+		        </div>
+		    </div>
+			</div>
+			
+			{% if contributedtalks.size == 0%}
+            {% else %}
+				<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem parallel position-relative">
+				    <div class="pl-4 pr-0 h-100 tofront">
+				        <div class="row justify-content-between">
+				            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+				                <a id="CT"><h1 class="mb-3" id="MS1">Sub-group contributed talks</h1></a>
+				                
+				                
+				                
+				                {% for ms in contributedtalks %}
+									<div class="row subgroup-name">
+										<div class="col-12">
+											{% include ms_card.html thisMS=ms %}
+										</div>
+									</div>
+								{% endfor %}
+				            </div>             
+				        </div>
+				    </div>
+				</div>
+			{% endif %}
+			
+			{% if posters.size == 0%}
+            {% else %}
+				<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem parallel position-relative">
+				    <div class="pl-4 pr-0 h-100 tofront">
+				        <div class="row justify-content-between">
+				            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+			                <a id="Posters"><h1 class="mb-3" id="MS1">Sub-group poster presentations</h1></a>
+							<div class="row subgroup-name">
+								<div class="col-12">
+									<div class="card">															
+								  	<h5 class="card-header card-header-subgroup {{ms.subgroup}}">{{page.subgroup}} Posters</h5>
+									  <div class="card-body" style="padding-top:0px;">
+									    <p class="card-text">																
+												<div>
+													{% for ms in posters %}
+											    	 {% if ms.author %}
+												    	<p><small class="card-body-subgroup"><strong><h5  class="text-{{ms.subgroup}}">{{ ms.poster }}</h5> </strong></small>
+													    	<a href="{{site.baseurl}}{{ms.permalink}}">
+														    	<strong>{{ ms.author }}</strong>
+												    	{% if ms.inst %} 
+												    		<em>{{ ms.inst }}</em>
+												    	{% endif %}
+												    	</br><span>Poster ID: {{ ms.poster }} (Session: {{ ms.code }})</span>
+												    	{% if ms.title %}
+												    		{% if ms.title == "" %} 
+												    			</br>"Title to be determined."</p>
+												    		{% else %}
+												    			</br>"{{ ms.title }}"</p>
+												    		{% endif %}
+												    	{% endif %}
+												    	
+												    	{% if ms.abstract %}
+													    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+													    		<div class="hide-abstracts">
+													    			{{ ms.abstract }}
+													    		</div>
+													    	</article>
+												    	{% else %}
+													    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+													    		<div class="hide-abstracts">
+													    			Abstract to be determined.
+													    		</div>
+													    	</article>
+												    	{% endif %}
+												    	</a>
+												    	<hr>
+												    {% endif %}
+												  {% endfor %}
+									  		</div>
+											</p>
+									  </div>
+									</div>
+								</div>
+							</div>
+				            </div>             
+				        </div>
+				    </div>
+				</div>
+			{% endif %}
+			
+			{% include footer.html %}	
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<!--
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+	            <div class="col-12 text-center pl-0">		            
+									<span class="click-legend" id="switch-text" onclick="abstractsHide()">
+					Click to show abstracts
+									</span>		            
+	            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

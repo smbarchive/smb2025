@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "ECOP"
+subgroup-long: "ECOP-05"
+title: "Celebrating 60 Years of Excellence: Honoring Yang Kuang’s Contributions to Mathematical Biology"
+organizers: "Tin Phan (Los Alamos National Laboratory), Yun Kang (Arizona State University); Tracy Stepien (University of Florida)"
+description: "This session is organized to honor Professor Yang Kuang for his pioneering contributions to mathematical biology, his spirit of collaboration, and his dedication to mentoring 28 PhD students, as well as numerous postdoctoral, master's, and undergraduate researchers. Invited speakers will present cutting-edge research inspired by Dr. Kuang’s foundational work, spanning ecological stoichiometry, delay and partial differential equations, and data-driven modeling in biology. Together, we highlight Dr. Kuang’s achievements and the profound influence his work has on guiding the next generation of researchers in mathematical biology."
+room: "Salon 9"
+code: "MS06"
+part: "3"
+codes: [MS01/MS-ECOP-05-Part-1, MS02/MS-ECOP-05-Part-2, MS09/MS-ECOP-05-Part-4]
+author1: "Lifeng Han"
+title1: "A Simplified Model of Cancer Vaccine with Two Different Tumor-Immune Functional Responses"
+inst1: "Tulane University"
+dept1: "School of Science & Engineering"
+abstract1: "This talk is dedicated to celebrating Dr. Yang Kuang’s profound influence on the field of mathematical biology and his pivotal role in shaping my own journey into mathematical oncology. In this work, I explore a simplified model of cancer vaccine incorporating two commonly used functional forms for immune-mediated tumor cell killing: the law of mass action (LMA) and the dePillis-Radunskaya Law (LPR). Through analytical techniques, we uncover how each functional response yields distinct biological insights. Notably, we find that under the LPR formulation, tumor elimination depends on the initial condition—offering mathematical support for the clinical practice of using cancer vaccines as an adjuvant therapy."
+author2: "Erica Rutter"
+title2: "Methods for Modeling and Estimating Treatment Heterogeneity in Tumors"
+inst2: "University of California, Merced"
+dept2: "Department of Applied Mathematics"
+abstract2: "Heterogeneity in biological populations, from cancer to ecological systems, is a fundamental characteristic that can significantly affect outcomes. Despite this, many mathematical models in population biology do not account for inter- or intra-individual heterogeneity. In systems such as cancer, this means assuming cellular homogeneity and deterministic phenotypes, even though heterogeneity is thought to play a crucial role in therapy resistance. In this talk, I will discuss several innovative approaches towards incorporating and estimating cellular heterogeneity in models of tumor growth. I will focus on random differential equations to model treatment heterogeneity and the Prohorov metric framework for estimating parameter distributions from aggregate data (e.g., tumor volume). We validate our method on synthetic and in vitro tumor volume data."
+author3: "Kyle Nguyen"
+title3: "Mathematical modeling of multicellular tumor spheroids quantifies inter-patient and intra-tumor heterogeneity"
+inst3: "Sandia National Laboratory"
+dept3: ""
+abstract3: "In the study of brain tumors, patient-derived three-dimensional sphere cultures provide an important tool for studying emerging treatments. The growth of such spheroids depends on the combined effects of proliferation and migration of cells, but it is challenging to make accurate distinctions between increase in cell number versus the radial movement of cells. To address this, we formulate a novel model in the form of a system of two partial differential equations (PDEs) incorporating both migration and growth terms, and show that it more accurately fits our data compared to simpler PDE models. We show that traveling-wave speeds are strongly associated with population heterogeneity. Having fitted the model to our dataset we show that a subset of the cell lines are best described by a “Go-or-Grow”-type model, which constitutes a special case of our model. Finally, we investigate whether our fitted model parameters are correlated with patient age and survival."
+author4: "Kevin Flores"
+title4: "Biologically-informed neural networks for modeling of BKV infection dynamics in renal transplant patients"
+inst4: "North Carolina State University"
+dept4: "Department of Mathematics"
+abstract4: "BK virus (BKV) nephropathy is a significant cause of kidney transplant failure, with no effective antiviral treatments currently available. Clinicians manage BKV by adjusting immunosuppressive medications, balancing the risks of infection progression and transplant rejection. To support clinical decision-making, we propose a biologically-informed neural network (BINN) model for predicting BKV infection dynamics. Our approach integrates patient data from electronic health records, including BKV levels, creatinine, vital signs, lab results, demographics, and medication dosage. A key challenge in modeling BKV infection is the lack of mechanistic detail in existing equations, particularly for creatinine levels. To address this, we applied BINNs to refine a previously validated differential equation model of BKV infection; in particular, the functional form for the equation used to describe creatinine was learned from time series data. Additionally, we used symbolic regression to extract simpler, interpretable mathematical expressions from the learned neural network-based function. Our study shows how machine learning can enhance the accuracy of mechanistic models, thereby enabling future clinical applicability and a personalized predictive framework for optimizing BKV management in kidney transplant patients."
+---

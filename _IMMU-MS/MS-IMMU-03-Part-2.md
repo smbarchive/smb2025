@@ -1,0 +1,35 @@
+---
+layout: group
+author: smb2025
+subgroup: "IMMU"
+subgroup-long: "IMMU-03"
+title: "Immune Responses to Viral Infections and Vaccines"
+organizers: "Veronika I. Zarnitsyna (Emory University), Esteban Hernandez Vargas, University of Idaho"
+description: "The immune response to vaccination arises from complex and dynamic interactions between host factors, antigen exposure, and the immune system. This mini-symposium brings together researchers leveraging mathematical modeling, data-driven analyses, and experimental immunology to quantify heterogeneity in vaccine responses and inform immunization strategies. Topics will include the impact of HLA diversity on CD8+ T cell responses, challenges in predicting immune protection in immunocompromised individuals, and the role of T cell cross-reactivity in shaping immune memory. Discussions will also address sex-based differences in lung immunity and how computational models can provide insights into immune function under varying physiological conditions. Additionally, we will explore parameter estimation techniques to optimize vaccine strategies and investigate nonlinear immune system dynamics, including stability and bifurcation behaviors in B cell responses. By integrating diverse approaches, this session aims to advance our understanding of immune variability across diverse populations and improve vaccine design."
+room: "Salon 3"
+code: "MS05"
+part: "2"
+codes: [MS01/MS-IMMU-03-Part-1]
+author1: "Grant Lythe"
+title1: "TCR repertoire and cross-reactivity"
+inst1: "University of Leeds"
+dept1: "School of Mathematics"
+abstract1: "There are approximately 400000000000 naive CD4 T cells in your body, about the same as the number of stars in our galaxy. On the other hand, the number of cells of one TCR clonotype is a small integer that increases or decreases by one cell at a time, when cells divide or die. New clonotypes are released from the thymus and compete with other clonotypes in the periphery for specific and non-specific resources. Mean clonal sizes can therefore be calculated from mean clonal lifetimes.  For example, if the ratio of thymic production to peripheral division is four percent, then the number of distinct T-cell clonotypes in the human body is about nine percent of the total number of (naive CD4) T cells.  In mice, most TCR clonotypes may consist of just one or two T cells.
+   TCRs recognize peptides (or epitopes), typically 8¬14 amino acids long, bound to MHC molecules on antigen-presenting cells. There cannot only exist a single TCR which recognizes a given peptide because the possible number of peptides is far greater than the number of T cells in a mouse or in one person.  Therefore, individual TCRs must recognize multiple peptides if a mammal's T cell repertoire is to be capable of providing coverage against the majority of new pathogens a host might encounter in its lifetime.  Patterns of recognition of epitopes by T cell clonotypes (a set of cells sharing the same T cell receptor) are represented as edges on a bipartite network.  We introduce a circular space of epitopes, so that T cell cross-reactivity is a quantitative measure of the overlap between clonotypes that recognize similar (that is, close in epitope space) epitopes."
+author2: "Dylan Hull-Nye"
+title2: "Derivation of mathematical relationship between cytotoxic T lymphocyte (CTL) and antibody production rates for immune control in lentiviral infection"
+inst2: "Washington State University"
+dept2: "Department of Mathematics and Statistics"
+abstract2: "Understanding immune responses to lentiviruses such as HIV and Equine Infectious Anemia Virus (EIAV) creates hope for a potential vaccine. We analyze a within-host model of EIAV infection with antibody and cytotoxic T lymphocyte (CTL) responses. In this model, the stability of the endemic equilibrium, characterized by the coexistence of long-term antibody and CTL levels, relies upon the balance between CTL and antibody production rates. We derive a mathematical relationship between CTL and antibody production rates to explore the bifurcation curve that leads to coexistence. The focus of this talk is on the mathematical two-parameter analysis that was developed for the numerical identification of the parameter ranges that drive the system towards immune system control of virus infection and on the extensions of this analysis."
+author3: "Alexis Erich S. Almocera"
+title3: "Hopf Bifurcations Unravel Complex Antibody Dynamics in COVID-19 Patients"
+inst3: "University of the Philippines Mindanao"
+dept3: "Department of Mathematics, Physics, and Computer Science"
+abstract3: "The introduction of vaccines during the later phases of the 2019-2022 coronavirus pandemic (COVID-19) emphasized the value of understanding the dynamics of immune responses. In this talk, we will present a model that previously concentrated on viral replication and T-cells to illustrate the antibody dynamics seen in COVID-19 patients. Our analysis revealed the existence of Hopf bifurcations, where changes in viral clearance rates by IgM and IgG can affect a shift between oscillating viral loads and a stable, steady state. When T-cell immunity is compromised, resulting in the emergence of the virus-positive equilibrium point (VPE), moderate antibody levels can facilitate pathways to manage prolonged infections through an unstable VPE. Our findings suggest a more complex immune response than suggested by our earlier model: while T-cells can still eliminate the infection by achieving a stable virus-free equilibrium, antibody responses become valuable when SARS-CoV-2 overwhelms the T-cells."
+author4: "Reagan Johnson"
+title4: "Modeling Rhinovirus mediated protection against lethal influenza"
+inst4: "University of Idaho"
+dept4: ""
+abstract4: "Influenza continues as a global issue, resulting in approximately one million deaths each year. Clinical studies have found that coinfections with other pathogens can occur, the impact of which varies. While some lead to an exasperated infection, others appear to reduce influenza’s severity and confer protection. However, the mechanisms behind this virus mediated protection have yet to be fully understood.
+Experimental results have shown complete survival of mice that are inoculated with Rhinovirus two days before receiving a lethal inoculation of Influenza-A. These studies have provided viral titers and immune cell counts which suggest an earlier innate immune response and faster clearance of the virus. We hypothesize that Rhinovirus is promoting earlier, and effective innate immunity to Influenza through its induction of type one Interferon. An important cytokine upstream of much of the innate immune response.  Utilizing the viral-data available, preliminary modeling results have supported that this coinfection cannot be well-captured by a simple target cell model, which does not consider an innate immune response. In this talk we will discuss our work in extending these differential models to investigate how Rhinovirus’s early impact on the immune system may be providing protection."
+---

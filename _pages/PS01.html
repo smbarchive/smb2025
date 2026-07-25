@@ -1,0 +1,107 @@
+---
+title: "Poster session: PS01"
+code: "PS01"
+layout: default
+pagination:
+    enabled: false
+description: "The Society for Mathematical Biology - Annual Meeting 2025."
+permalink: /PS01/
+---
+
+<div class="container">
+	
+	{% assign author = site.authors.esmb %}
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+			<div class="h-100 tofront">
+				<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+					<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+						<p class="text-uppercase font-weight-bold">
+			              <span class="catlist">
+			              	<span class="text-SMB">SMB2025</span>		
+			              	</br><span class="text-OTHE">Location: TBD</span>
+			              </span>
+						</p>
+						<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+							<h4>{{site.authors.esmb[page.code]}}</h4>
+						<div class="d-flex align-items-center">
+							<img src="../assets/images/logo.jpg" alt="{{author.name}}" width="70"/>
+	            
+							<small class="ml-3"> 
+								{{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
+				               <span class="text-muted d-block mt-1">{{site.authors.esmb[page.code]}} during the "{{page.code}}" time block. </span>
+							</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+	<div class="row mt-3">   
+		<div class="col-md-12 main-loop">
+			
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem parallel position-relative">
+			    <div class="pl-4 pr-0 h-100 tofront">
+			        <div class="row justify-content-between">
+			            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+			                <h1 class="mb-3" id="{{page.code}}">{{page.title}}</h1>
+			                
+			                
+			                {% for ms in site.PS01 %}
+							    	{% if ms.author %}
+								    	<p><small class="card-body-subgroup"><strong><h5  class="text-{{ms.subgroup}}">{{ ms.poster }}</h5> </strong></small>
+									    	<a href="{{site.baseurl}}{{ms.permalink}}">
+										    	<strong>{{ ms.author }}</strong>
+								    	{% if ms.inst %} 
+								    		<em>{{ ms.inst }}</em>
+								    	{% endif %}
+								    	</br><span>Poster ID: {{ ms.poster }} (Session: {{ ms.code }})</span>
+								    	{% if ms.title %}
+								    		{% if ms.title == "" %} 
+								    			</br>"Title to be determined."</p>
+								    		{% else %}
+								    			</br>"{{ ms.title }}"</p>
+								    		{% endif %}
+								    	{% endif %}
+								    	
+								    	{% if ms.abstract %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<div class="hide-abstracts">
+									    			{{ ms.abstract }}
+									    		</div>
+									    	</article>
+								    	{% else %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<div class="hide-abstracts">
+									    			Abstract to be determined.
+									    		</div>
+									    	</article>
+								    	{% endif %}
+								    	</a>
+								    	<hr>
+								    {% endif %}
+								    
+							{% endfor %}
+							
+							{% include footer.html %}
+							
+			            </div>             
+			        </div>
+			    </div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

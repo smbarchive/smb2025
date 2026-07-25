@@ -1,0 +1,61 @@
+---
+title: "Contributed talk session: CT03"
+code: "CT03"
+layout: default
+pagination:
+    enabled: false
+description: "The Society for Mathematical Biology - Annual Meeting 2025."
+permalink: /CT03/
+---
+
+<div class="container">
+	
+	<div class="col-md-12 main-loop">
+    <div class="row">
+      <div class="col-md-12  text-center">
+        <h1 class="mb-3">{{page.title}}</h1>
+        <h4>{{site.authors.esmb[page.code]}}</h4>
+      </div>
+    </div>
+	</div>
+
+	<div class="row mt-3">   
+		<div class="col-md-12 main-loop">
+			
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem parallel position-relative">
+		    <div class="pl-4 pr-0 h-100 tofront">
+		        <div class="row justify-content-between">
+		            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+		                <h1 class="mb-3" id="{{page.code}}">{{page.title}}</h1>
+		                
+		                
+		                {% for ms in site.CT03 %}
+							<div class="row subgroup-name">
+								<div class="col-12">
+									{% include ms_card.html thisMS=ms %}
+								</div>
+							</div>
+						{% endfor %}
+		            </div>             
+		        </div>
+		    </div>
+			</div>
+			{% include footer.html %}	
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

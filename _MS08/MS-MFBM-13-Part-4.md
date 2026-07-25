@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "MFBM"
+subgroup-long: "MFBM-13"
+title: "Modern methods in the data-driven modeling of biological systems"
+organizers: "Cody FitzGerald (Northwestern University), Rainey Lyons (CU Boulder), Nora Heitzman-Breen (CU Boulder), Susan Rogowski (NCSU)"
+description: "Due to recent developments in laboratory technology and data collection techniques, there is an abundance of large and complex datasets resulting from a vast array of biological experiments. This surge of data demands the development of novel data-driven techniques to generate robust, interpretable, and generalizable models of biological systems. The purpose of this minisymposium is to present modern advances in data-driven methods for modeling biological dynamics in the areas of parameter estimation, scientific machine learning, algorithmic model selection, and weak form methods. This minisymposium also aims to discuss common challenges which appear in the context of data-driven modeling, such as sparse data, unobserved states, noisy data, structural and practical identifiability issues, and incorporating multiple biological scales. Applications for such methods will span many active areas of biological research, including cell migration, physiology, neuroscience, epidemiology, and ecology."
+room: "Salon 10"
+code: "MS08"
+part: "4"
+codes: [MS01/MS-MFBM-13-Part-1, MS02/MS-MFBM-13-Part-2, MS05/MS-MFBM-13-Part-3]
+author1: "Rainey Lyons"
+title1: "Learning Structured Population Dynamics from Data with WSINDy"
+inst1: "CU Boulder"
+dept1: ""
+abstract1: "In the context of population dynamics, the identification of effective model ingredients, e.g., fecundity and mortality rates, is generally a complex and computationally intensive process, especially when the dynamics are heterogeneous across the population. In this talk, we propose a method of selecting proper model ingredients from a library of basis functions for structured populations. This method uses extensions of the recent WSINDy method to select the best fitting ingredients from noisy time-series histogram data. Several test cases are considered demonstrating the method's performance for the well studied age and size structured models. Through these examples, we examine both the advantages and limitations of the method, with a particular focus on how the temporal and structural resolution of the dataset influences the accuracy of the model."
+author2: "Francis Anokye"
+title2: "Quantifying the hidden burden of Omicron and the impact of Alert Level System in Newfoundland and Labrador"
+inst2: "Memorial University of Newfoundland"
+dept2: "Interdisciplinary, School of Graduate Studies"
+abstract2: "The highly transmissible Omicron variant of the SARS-CoV-2 virus caused many infections in Newfoundland and Labrador (NL), a Canadian province that had previously reported few SARS-CoV-2 infections. An alert level system of non-pharmaceutical interventions (NPIs) was implemented to reduce the spread of the virus, but the efficacy of this system is not known since reported case numbers are likely unreliable. In NL, by early January 2022 testing capacity had been exceeded and in the subsequent weeks testing eligibility criteria was modified several times. We estimate the efficacy of the alert level system implemented in NL (December 15, 2021 to May 26, 2022) by considering seroprevalence data, where seroprevalence detects antibodies indicative of prior exposure to the virus. We use these seroprevalence data to infer daily incidence (referred to as `true incidence') and calibrate a mechanistic compartmental model to estimate the effective reproduction number for the alert level system. We calculate the fraction of the NL population eligible for testing from the description of the criteria and combine these eligibility fraction estimates with the seroprevalence data to independently predict the number of reported cases (referred to as `predicted reported'). We compare the trends in the `true incidence', `predicted reported', and `reported cases' to better understand the dynamics of the Omicron variant spread, and the impact of the alert of system and the changing test eligibility in NL. Our approach illustrates how quantities that inform future pandemic preparedness can be estimated even when testing eligibility is restricted and changing."
+author3: "Marisa Eisenberg"
+title3: "Models to inform wastewater-based epidemiology: opportunities and uncertainty"
+inst3: "University of Michigan, Ann Arbor"
+dept3: "Complex Systems, Epidemiology, and Mathematics"
+abstract3: "Wastewater monitoring has seen a broad expansion over the pandemic as a useful tool for understanding disease patterns, without relying on clinical testing or care-seeking. Wastewater data has great potential to help us understand the epidemiological patterns of a wide range of diseases—from detecting new outbreaks to understanding seasonal patterns. But challenges remain in understanding how to translate wastewater concentration data into population information on transmission patterns. In this talk, we will explore how mathematical models have the potential to help us bridge that gap and make wastewater data more actionable and interpretable, and examine the uncertainty and identifiability challenges involved in linking models with wastewater data."
+author4: "Seth Minor"
+title4: "Learning Coarse-Grained Ecological Models from Stochastic Interacting Particle Data"
+inst4: "CU Boulder"
+dept4: "APPM"
+abstract4: "'In the limit of large numbers of individuals N >> 1, the probability density function of many stochastic interacting particle systems is governed by a deterministic law called a Fokker-Planck equation. In this talk, we'll discuss weak form techniques for learning Fokker-Planck equations from empirical stochastic particle data. In particular, we will focus on applications to ecological modeling of insect dispersal.'"
+---

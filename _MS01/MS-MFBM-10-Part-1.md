@@ -1,0 +1,37 @@
+---
+layout: group
+author: smb2025
+subgroup: "MFBM"
+subgroup-long: "MFBM-10"
+title: " Flow-Kick Dynamics in Population Biology: Bridging Continuous and Discrete Processes"
+organizers: "Sebastian Schreiber (University of California, Davis)"
+description: "This minisymposium will explore recent advances in flow-kick (aka hybrid or impulsive) dynamical systems and their applications to population biology. Flow-kick models, which combine continuous dynamics with discrete perturbations of states and parameters, provide a powerful framework for studying biological systems that experience both smooth and abrupt changes. 
+
+Recent theoretical developments have established new tools for analyzing the interplay between continuous and discrete processes in biological systems. Applications including consumer-resource dynamics with seasonal reproduction, epidemiological models with pulsed vaccination, and population management with periodic harvesting demonstrate how flow-kick approaches can capture emergent phenomena missed by purely continuous or discrete models. 
+
+The minisymposium will bring together researchers developing mathematical theory and numerical methods for flow-kick systems alongside those applying these tools to concrete biological problems. Talks will showcase both analytical approaches and empirical applications, with emphasis on mechanistic understanding of population responses to perturbation. By highlighting this growing synthesis of theory and application, the session aims to stimulate new collaborations advancing our ability to understand and manage populations experiencing recurrent disturbances."
+room: "Salon 11"
+code: "MS01"
+part: "1"
+codes: [MS02/MS-MFBM-10-Part-2]
+author1: "Alanna Hoyer-Leitzel"
+title1: "Resilience to reinfection in an impulsive model of viral exposure"
+inst1: "Mount Holyoke College"
+dept1: "Department of Mathematics"
+abstract1: "Re-exposure to virus in an ongoing, low-level endemic can lead to the appearance of long term immunity in an individual. Starting with an ordinary differential equations model for an immune system, we simulate repeated viral re-exposure with a discrete impulse of virus. When the re-exposures are deterministic, we can find different long term outcomes of either reinfection or protection, depending on viral dose size and frequency. We investigate how these outcomes persist when the re-exposures are stochastic. We examine the effects of the choice of probability distributions for viral dose size and frequency."
+author2: "Jakob Kaare-Rasmussen"
+title2: "Habitat Destruction and Disturbance in Forest Ecosystems"
+inst2: "University of California, Davis"
+dept2: "Center for Population Biology"
+abstract2: " Forests around the world are increasingly threatened by habitat destruction and disturbances—factors that, together, can have profound and often unexpected effects on these ecosystems. Habitat destruction is the loss of habitat due to urbanization or agricultural lands while disturbances are perturbations of the system that leave the environment habitable, like forest fires and drought. Forests are not just collections of trees; they also depend on below-ground mycorrhizal fungal mutualists. The mycorrhizal fungi facilitate the uptake of nutrients and water for the trees while receiving products of photosynthesis in return. Despite their importance and close relationship with trees, mycorrhizal fungi are often overlooked in mathematical models of forest response to environmental stressors. To address this gap, I developed a metacommunity model that explicitly incorporates the mutualism between trees and mycorrhizal fungi. After analyzing the dynamics of the unperturbed system, I examined the impact of habitat destruction—modeled as the continuous loss of habitat over time—which can lead to catastrophic forest collapse. This habitat destruction is often accompanied by disturbance events, modeled here as discrete events that “kick” the system’s state. The interplay between continuous background change (destruction) and sudden disturbances (kicks) generates complex and sometimes counterintuitive behaviors, including rate-induced tipping from a healthy forested state to local extinction. To gain insights into the dynamical mechanisms underlying this rate-tipping, I analyzed a simplified one-dimensional bistable model. This reduced model reveals general patterns relevant to a wide range of systems experiencing both gradual environmental change and discrete disturbance events. Given that many ecological systems are facing similar pressures, such as ongoing environmental degradation combined with frequent disturbances, this work illustrates how non-autonomous flow-kick models can be used to better understand and predict how ecosystems respond to these dual stressors."
+author3: "Vanja Dukic"
+title3: "Weak-form inference for hybrid dynamical systems in ecology"
+inst3: "University of Colorado"
+dept3: "Department of Applied Mathematics"
+abstract3: "Species subject to predation and environmental threats commonly exhibit variable periods of population boom and bust over long timescales. Understanding and predicting such behaviour, especially given the inherent heterogeneity and stochasticity of exogenous driving factors over short timescales, is an ongoing challenge. A modelling paradigm gaining popularity in the ecological sciences for such multi-scale effects is to couple short-term continuous dynamics to long-term discrete updates. We develop a data-driven method utilizing weak-form equation learning to extract such hybrid governing equations for population dynamics and to estimate the requisite parameters using sparse intermittent measurements of the discrete and continuous variables. The method produces a set of short-term continuous dynamical system equations parametrized by long-term variables, and long-term discrete equations parametrized by short-term variables, allowing direct assessment of interdependencies between the two timescales. We demonstrate the utility of the method for epizootics experienced by the North American spongy moth (Lymantria dispar dispar). Joint work with Dan Messenger and Greg Dwyer."
+author4: "Punit Gandhi"
+title4: "The impact of rainfall variability on pattern formation in a flow-kick model for dryland vegetation bands"
+inst4: "Virginia Commonwealth University"
+dept4: "Department of Mathematics and Applied Mathematics"
+abstract4: "Water input in dryland ecosystems comes in the form of infrequent, discrete and largely unpredictable rainstorms.  These short-lived pulses are known to sustain large-scale spatial patterns that appear as regularly spaced bands of dense vegetation separated by regions of bare soil. I will present a flow-kick modeling framework for such dryland vegetation patterns that treats storms as instantaneous kicks to the soil water, which then interacts with vegetation during the long dry periods between the storms. The spatial profiles of the nonlocal, state-dependent soil water kicks capture positive feedbacks in the storm-level hydrology that act to concentrate water within the vegetation bands. This flow-kick model predicts that variance in rainfall, introduced through randomness in the timing and magnitude of water input from storms, decreases the parameter range over which patterns form and may negatively impact ecosystem resilience. Authors: Matthew Oline (University of Chicago), Mary Silber (University of Chicago)"
+---

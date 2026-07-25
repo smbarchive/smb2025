@@ -1,0 +1,172 @@
+---
+title: "Plenary speakers"
+layout: default
+pagination:
+    enabled: false
+description: "Plenary Speakers for The Society for Mathematical Biology Annual Meeting 2025."
+---
+
+
+<div class="container">	
+	<div class="col-md-12 main-loop">
+	    <div class="row">
+	        <div class="col-md-12  text-center">
+		        <h1 class="mb-3">{{page.title}}</h1>
+		        <p>Please check back soon for updates, as this page will be updated regularly.</p>
+	        </div>
+	    </div>
+	</div>
+	
+
+	<div class="container-lg pt-4 pb-4">
+		<div class="row justify-content-center">
+        
+        
+		<div class="col-md-12 col-lg-10">
+			
+			{% assign plenary_speakers = site.Plenary | sort: 'numbering' %}
+
+			{% assign iterator = 1 %}
+			<!-- each plenary has a jumbotron: -->
+			{% for ms in plenary_speakers %}
+				<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem position-relative">
+			    <div class="pl-4 pr-0 h-100 tofront">
+			        <div class="row justify-content-between">
+			            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+			                <a href="{{ site.baseurl }}/plenary/plenary-{{ms.numbering}}">
+				                <h4>
+					                <strong>Plenary-{{ms.numbering}}</strong>
+				                {% if ms.prize-name %}
+													: {{ ms.prize-name }}
+												{% endif %}
+			                	</h4>
+			                	{% if ms.introduced %}
+													<small>Introduced by: <strong>{{ ms.introduced }}</strong></small></br>
+												{% endif %}</br>
+            						{% if ms.time %}
+<!-- 													<h6>{{ ms.time }}</h6></br> -->
+												{% endif %}
+			                	<h1 class="mb-3">{{ ms.speaker }}</h1>
+			                	{% if ms.affiliation %}
+				                	<h6><strong>{{ms.affiliation}}</strong></h6> 
+				                {% endif %}
+				                {% if ms.institution %}
+				                	<h6>{{ms.institution}}</h6> 
+				                {% endif %}
+				                </br>
+			                </a>
+			                
+			                
+			                <div class="d-flex align-items-center">
+						            {% if ms.author-image %}
+						            	<img class="rounded-circle" src="../{{ms.author-image}}" alt="{{ms.speaker}}" width="70"/>
+						            {% endif %}
+						            {% if ms.author-image-2 %}
+						            	<img class="rounded-circle" style="margin-left: 10px;" src="../{{ms.author-image-2}}" alt="" width="70"/>
+						            {% endif %}
+												<small class="ml-3"> 
+													{% if ms.author-url %}
+														<span><a target="_blank" href="{{ ms.author-url }}" target="_blank" class="btn btn-outline-success btn-sm btn-round ml-1">{{ ms.speaker }}</a></span>
+													{% endif %}
+													{% if ms.author-twitter %}
+														<span><a target="_blank" href="{{ page.author-twitter }}" target="_blank"class="btn btn-outline-success btn-sm btn-round ml-1">Follow on Twitter</a></span>
+													{% endif %}
+													{% if ms.prize-url %}
+														<span><a target="_blank" href="{{ ms.prize-url }}" target="_blank"class="btn btn-outline-success btn-sm btn-round ml-1">{{ ms.prize-name }}</a></span>
+													{% endif %}
+												</small>
+											</div>
+			                
+			                
+			                {% if ms.title %}
+			                	</br>
+			                	<a href="{{ site.baseurl }}/plenary/plenary-{{ms.numbering}}"><h4 class="text-EDUC">{{ms.title}}</h4></a>
+			                {% endif %}
+			                
+			                {% if ms.abstract %}
+			                	</br>
+<!-- 			                	<p><strong>Abstract</strong>:</p>  -->
+			                	<p>{{ms.abstract}}</p>
+				              {% endif %}
+				              
+				              {% if ms.best-paper-title %}
+				              	<hr>
+					              <div class="d-flex align-items-center">
+													<h4>Best paper:</h4>
+													<span>
+														<small class="ml-3">
+															<a target="_blank" href="{{ ms.best-paper-url }}" target="_blank" class="btn btn-outline-success btn-sm btn-round ml-1">Link to best paper</a>
+														</small>
+													</span>			
+					              </div>				
+											
+				              	<p>"<em>{{ms.best-paper-title}}</em>" </br><strong>{{ ms.best-paper-authors }}</strong></p>
+				              {% endif %}
+				              
+				              
+				              
+				              {% if ms.best-paper-talk-abstract %}
+			                	<p>{{ms.best-paper-talk-abstract}}</p>
+				              {% endif %}
+				              
+		              
+				              
+				              
+				              
+				              
+				              
+				              
+			            </div>             
+			        </div>
+			    </div>
+				</div>
+				{% assign iterator = iterator | plus:1 %}
+			{% endfor %}
+			
+			
+			
+			
+			
+			</br>
+			</br>
+							    
+	      
+			<!-- Author Box -->
+      {% if author %}				
+			<div class="row mt-5">
+				<div class="col-md-2 align-self-center">
+                       {% if author.avatar %}
+                      <img class="rounded-circle" src="../{{author.avatar}}" alt="{{author.name}}" width="90"/>
+                      {% endif %} 
+				</div>
+				<div class="col-md-10">		
+                      <h5 class="font-weight-bold">Hosted by {{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
+					{{ author.bio }}					
+				</div>
+			</div>				
+      {% endif %}
+
+	  {% include footer.html %}
+            
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "EDUC"
+subgroup-long: "EDUC-01"
+title: "Recent perspectives on mathematical-biology education"
+organizers: "Stacey Smith? (The University of Ottawa)"
+description: "This minisymposium will bring together education experts to examine up-to-the-minute problems that showcase the usefulness and applicability of mathematical biology in education in a post-COVID world. Now that online and hybrid teaching are tools that can be easily integrated, how has the classroom changed? What are the challenges in teaching a cohort that is effectively missing high-school education? How do educational philosophies differ across global communities? The audience is the mathematical biologist with an interest in education. This includes students, postdocs and professors, mathematicians interested in seeing biological applications and biologists who wish to see how mathematics can be used in teaching."
+room: "Salon 1"
+code: "MS08"
+part: "2"
+codes: [MS07/MS-EDUC-01-Part-1]
+author1: "Michael Kelly"
+title1: "Beyond an introduction: advanced interdisciplinary data science in the liberal arts."
+inst1: "Transylvania University"
+dept1: ""
+abstract1: "With data playing an increasingly central role in shaping society, it is essential for students not only to interpret and analyze data, but to apply advanced techniques across disciplines with purpose and ethical awareness. As part of Transylvania University’s new interdisciplinary data analytics minor, this talk will be a discussion of the two upper-level courses developed (and recently taught) to build on foundational skills through project-based learning, critical thinking, and domain-specific applications. Topics include machine learning, data wrangling, text mining, and data ethics, all grounded in liberal arts inquiry. This talk will discuss the development and implementation of these advanced courses. In addition, assessment data will be shared from across the minor to reflect on student outcomes, successes, and ongoing challenges."
+author2: "Stacey Smith?"
+title2: "To pre-record or not to pre-record? Lessons learned from video instruction in a flipped classroom"
+inst2: "The University of Ottawa"
+dept2: "Mathematics"
+abstract2: "Educational theory suggests that students benefit when students become responsible for their own learning outside the classroom while utilising the teacher's expert knowledge for in-class help. However, flipping a large classroom without additional resources requires scaling up strategies from smaller classrooms. A calculus class was flipped twice in successive years, once requiring the students to read the course notes in advance, the second time requiring them to watch pre-recorded videos. Metrics of learning included Bloom's taxonomy, grades, teaching evaluations and anecdotal feedback. Class participation was high and phone use was low, but students largely did not read the material in advance. However, they did watch the videos before and during class. Exam marks were not noticably different without videos, but improved markedly with them. Metacognition was significantly improved in both semesters, with students gaining a deeper insight, more peer connection and less classroom fear than had previously been available. Flipping a large classroom requires significant investment outside of the classroom. Students learn best from visual aides, so pre-recorded videos are a vital tool in managing such an educational delivery option."
+author3: "Reginald McGee"
+title3: "Teaching Reflections One-Year Post Tenure"
+inst3: "Haverford University"
+dept3: ""
+abstract3: "'Life is what you make it, I hope you make a movement' -Nipsey Hussle. This talk is the next installment after my 2019 and 2023 reflections from my first and fifth years teaching full-time at a private liberal arts college. We will discuss recent moves to better align assessments and activities with stated course objectives. In particular, we consider tasks that give students agency in showing mastery of core concepts in the context of their own interests, and a first attempt at a class journal club."
+author4: "Elissa Schwartz"
+title4: "Should we teach a course on writing to graduate students?"
+inst4: "Washington State University"
+dept4: ""
+abstract4: "For the graduates of our master’s and Ph.D. programs, future careers are likely to involve professional communication skills. Yet, traditional curricula seldom include formal coursework in writing. Furthermore, many students in graduate programs in mathematical biology have arrived on this career path due to their proficiency in mathematics or interdisciplinary applications, without a focus on training in written or oral communication. Incorporation of training on writing has begun in some graduate programs to benefit their thesis and dissertation writing, manuscript submissions, grant proposal writing, and beyond. In this talk, data and experiences will be shared from a pilot course on professional communication for graduate students in STEM. Topics covered in the course included grant proposal writing, poster presentation, the three-minute thesis (3MT), writing assistance from large language models, and other topics in professional development."
+---

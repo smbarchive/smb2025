@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "MEPI"
+subgroup-long: "MEPI-05"
+title: "Mathematical Modelling of Human Behaviour"
+organizers: "Iain Moyles (York University), Rebecca Tyson, University of British Columbia Okanagan"
+description: "Human agency plays a critical role in the successful mitigation of disease and implementation of public health policy. This minisymposium will explore the role and impact of human behaviour in mathematical models of disease and social contagion including how social influence can both support and hinder mitigating efforts."
+room: "Salon 6"
+code: "MS01"
+part: "1"
+codes: [MS05/MS-MEPI-05-Part-2]
+author1: "Iain Moyles"
+title1: "Fear dynamics in a mathematical model of disease transmission"
+inst1: "York University"
+dept1: ""
+abstract1: "We explore a mathematical model of disease transmission with a fearful compartment. Susceptible individuals become afraid by either interacting with individuals who are already afraid or those who are infected. Individuals who are afraid take protective measures via contact reductions to reduce risk of transmission. Individuals can lose fear naturally over time or because they see people recovering from the disease. We consider two scenarios of the model, one where fear is obtained at a slower rate than disease spread and one where it is comparable. In the former we show that behavioural change cannot impact disease outcome, but in the latter, we observe that sufficient behavioural intervention can reduce disease impact. However, response to recovery can induce a bifurcation where contact reduction cannot mitigate disease spread. We identify this bifurcation and demonstrate its implication on disease dynamics and final size."
+author2: "Md. Mijanur Rahman"
+title2: "The role of opinion dynamics in generating multiple epidemic waves"
+inst2: "University of British Columbia Okanagan"
+dept2: ""
+abstract2: "We develop and rigorously analyze a coupled opinion-disease framework in which the population is partitioned into two susceptible classes that differ in their infection rates and are linked by opinion switching. We show that the model preserves classic SIR-type dynamics for the total susceptible population but embeds a feedback loop through a time-varying effective transmission rate that depends on the opinion proportions. We define an effective reproduction rate based on the transmission rate and establish explicit criteria for epidemic peaks in terms of its sign changes. Two asymptotic regimes are examined using the scaled base opinion-switching rate. In the slow switching limit, opinion exchange freezes and guarantees at most one infection wave. In the fast switching limit, the opinion distribution equilibrates instantaneously to a quasi-steady state, which again leads to a single wave. Extending the model to Hill-type, infection-dependent switching rates yields the same one-wave result in both asymptotic limits. These findings imply that neither vanishingly slow nor extremely rapid opinion change, as modelled here, can sustain recurrent outbreaks. Repeated waves in this framework must arise from intermediate switching speeds or necessitate the inclusion of additional mechanisms not considered in these asymptotic limits. The work highlights the speed of opinion change as a potential public health leverage point."
+author3: "Azadeh Aghaeeyan"
+title3: "Understanding the Decision-Making of Late COVID-19 Vaccine Adopters"
+inst3: "Brock University"
+dept3: ""
+abstract3: "Individuals responded differently to the COVID-19 vaccination campaign: some were early adopters, others delayed vaccination, and some refused it altogether. Despite the important role of late adopters in pandemic control, their behaviour remains understudied. We propose a mechanistic model that divides late adopters based on their decision-making strategies into two types: success-based learners, who are influenced by others’ vaccination experiences, and myopic rationalists, who receive their shots when the perceived benefit of vaccination outweighs the cost. The model also accounts for possible shifts in vaccination perception triggered by impactful events. Using a Bayesian framework, we fit the model to weekly COVID-19 vaccine uptake data from U.S. states, stratified by age and sex. Our results suggest that late adopters mainly behaved as success-based learners and that perception shifts varied across events—some increased and others reduced the perceived value of vaccination. These findings are a step toward tailoring vaccine promotion communication strategies to late adopters."
+author4: "Ariel Greiner"
+title4: "Can tourism drive effective coral reef management? A modelling study."
+inst4: ""
+dept4: ""
+abstract4: "Coral reefs are some of the most threatened ecosystems on the planet but also some of the most important, hosting upwards of 25% of marine biodiversity while also providing food and livelihood to almost 1 billion people. Coral reefs are also connected together into reef networks by coral larval dispersal, meaning that management or damage at one reef may have consequences for any reefs it is connected to. For this reason, coral reef management is of interest to many industries (e.g., fisheries, tourism) and governments. The potential impact of tourism in the context of coral reef management is unclear, as tourism is a source of damage for reefs but may also be a source of income that motivates conservation actors to keep reefs healthy for future tourists. Tourism groups also often focus on a subset of coral reefs, meaning that any management initiatives driven by tourism income would also only be focused on a subset of coral reefs in a reef network. We develop a socio-ecological model composed of a system of differential equations. This model represents a network of coral reefs visited by tourists to determine whether tourism income could help sustain a healthy network of coral reefs into the future. We explore this question under a variety of different tourism paradigms, management methods (coral restoration, fisheries management) and network types. Overall, we find that management funded by tourism can help counteract tourism damage, but is unable to save reefs that are unhealthy (low initial coral cover, high fishing). Management also has limited potential to help connected reefs in the network. This study demonstrates the limited effectiveness of tourism to drive coral reef conservation and instead encourages active investment in management methods that focus on the entire reef network."
+---

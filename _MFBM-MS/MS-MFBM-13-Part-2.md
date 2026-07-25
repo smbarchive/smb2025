@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "MFBM"
+subgroup-long: "MFBM-13"
+title: "Modern methods in the data-driven modeling of biological systems"
+organizers: "Cody FitzGerald (Northwestern University), Rainey Lyons (CU Boulder), Nora Heitzman-Breen (CU Boulder), Susan Rogowski (NCSU)"
+description: "Due to recent developments in laboratory technology and data collection techniques, there is an abundance of large and complex datasets resulting from a vast array of biological experiments. This surge of data demands the development of novel data-driven techniques to generate robust, interpretable, and generalizable models of biological systems. The purpose of this minisymposium is to present modern advances in data-driven methods for modeling biological dynamics in the areas of parameter estimation, scientific machine learning, algorithmic model selection, and weak form methods. This minisymposium also aims to discuss common challenges which appear in the context of data-driven modeling, such as sparse data, unobserved states, noisy data, structural and practical identifiability issues, and incorporating multiple biological scales. Applications for such methods will span many active areas of biological research, including cell migration, physiology, neuroscience, epidemiology, and ecology."
+room: "Salon 10"
+code: "MS02"
+part: "2"
+codes: [MS01/MS-MFBM-13-Part-1, MS05/MS-MFBM-13-Part-3, MS08/MS-MFBM-13-Part-4]
+author1: "Alexandria Volkening"
+title1: "Combining different approaches to topological data analysis to quantify agent-based patterns"
+inst1: "Purdue"
+dept1: "Mathematics"
+abstract1: "Pattern formation is present at many scales in biology, and here I focus on wild-type and mutant patterns in zebrafish skin. Because these stripe and spot patterns form due to the interactions of pigment cells, agent-based modeling is a natural approach. However, whether for zebrafish or other biological systems, agent-based models often present challenges for parameter inference and analysis. To help open the door to addressing these challenges associated with data-driven, agent-based modeling, it is necessary to develop methods to quantify messy cell-based patterns. Here we show how to interpret persistent homology using the sweeping plane filtration to quantify biologically meaningful features of imperfect stripe and spot patterns. We compare different methods for computing persistent homology and discuss the insight that each one can give us into agent-based patterns."
+author2: "Yue Liu"
+title2: "Bayesian parameter inference in agent-based models of zebrafish patterns using TDA"
+inst2: "Purdue"
+dept2: "Mathematics"
+abstract2: "Collective behaviour of individual agents is present across biological systems, as in the case of migrating cells during development, the formation of animal skin patterns, and bird flocking. Agent-based models offer a flexible and natural framework for capturing these pattern formation processes. However, inferring the parameters in such models poses significant challenges. We demonstrate that combining topological data analysis (TDA) with approximate-approximate Bayesian computation (AABC) is a computationally feasible approach to addressing these challenges. In our study, we focus on an existing agent-based model of pattern formation in zebrafish skin, and show how to estimate parameters in this complex, stochastic model. We discuss several approaches for combining information from multiple sources in aid of inference, and demonstrate how practical identifiability hinges on the hyperparameters in the inference algorithm."
+author3: "Kyle Nguyen"
+title3: "Model-form Error Correction using Universal Differential Equations for an Agent-Based Model of Infectious Disease"
+inst3: "NCSU"
+dept3: ""
+abstract3: "Agent-based models (ABMs) have emerged as a powerful tool for studying infectious diseases. By introducing heterogeneity and stochasticity through individual agent behaviors, ABMs allow for the emergence of complex patterns at the population level. However, scaling up and calibrating ABMs to provide further information and additional validation and verification remains challenging. On the other hand, ordinary differential equations (ODEs) models are often employed to model the average behavior of populations over time. ODE models adopt a deterministic approach, making them easier to calibrate. Due to the strengths and limitations of both modeling frameworks, developing ODE models as surrogates for ABMs is an active research area within scientific communities. In recent years, the emerging field of scientific machine learning (SciML) has aimed to integrate traditional mathematical modeling with advancements in machine learning to address these challenges. These advancements are laying the foundation for SciML to provide novel surrogates that decompose the global and local behaviors inherent to ABMs. This presentation demonstrates universal differential equations (UDEs) as an approach to bridge the gap between ODE models and ABM models. Using UDE models as surrogates for ABMs allows us to preserve the foundational ODE that represents global disease dynamics while coupling it with a neural network model to approximate functions for the local behaviors of the ABM."
+author4: "Alyssa Wenzel"
+title4: "Topologically-based parameter inference for agent-based model selection from spatiotemporal cellular data"
+inst4: "NCSU"
+dept4: "Mathematics"
+abstract4: "Fibroblasts in a confluent monolayer are known to adopt morphologies that differ from those of isolated cells. Moreover, confluent fibroblasts, though completely surrounded by neighboring cells, are known to be motile. Previous studies involving time lapse microscopy showed that confluent fibroblast cells spontaneously arrange themselves into a nematic order. We previously collected and analyzed new time lapse microscopy data to show that the movement of neighboring cells in confluent monolayers are oriented parallel to each other and often moving in opposite directions in a collective motion phenomenon we refer to as “fluidization’’ of the cell population. Here, we performed an in-silico model selection study to show that topological data analysis could be used to distinguish between biophysical mechanisms that generate distinct fluidization patterns in an agent-based model of cell motility. We have added a new mechanism to represent cell alignment to the existing D’Orsogna model. We have compared this model to the D’Orsogna model using Bayesian Information Criteria."
+---

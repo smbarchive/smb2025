@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "OTHE"
+subgroup-long: "OTHE-10"
+title: "Emerging areas in Mathematical Biology: Celebrating research from the Mathematical Biosciences Institute"
+organizers: "Veronica Ciocanel (Duke University), Hye-Won Kang, University of Maryland Baltimore County"
+description: "This minisymposium aims to highlight recent advances in emerging areas and novel mathematical approaches for addressing biological questions. The sessions will cover a broad spectrum of themes that integrate data-driven mathematical modeling and real-world applications. Topics covered include advances in stochastic and continuum modeling of molecular and regulatory mechanisms in cells, network dynamics in infectious disease and ecological systems, and data-driven methods for sleep homeostasis and disorders. These sessions will also celebrate the impactful mathematical biology research of former Mathematical Biosciences Institute (MBI) postdocs and visitors whose career was influenced by their time and connections made while at the MBI."
+room: "Salon 3"
+code: "MS02"
+part: "1"
+codes: [MS03/MS-OTHE-10-Part-2]
+author1: "Scott McKinley"
+title1: "Robust inference and model selection for particle tracking in live cells"
+inst1: "Tulane University"
+dept1: ""
+abstract1: "There is now an expansive collection of mathematical work on building models for the transport of intracellular cargo by molecular motors. Commonly studied cargo undergo “saltatory” motion (bidirectional ballistic motion, intermixed with periods of stationarity) along often unobserved microtubules. Traditionally microparticle transport is quantified in terms of mean-squared displacement, but this ubiquitous statistic averages over periods of motion and pauses, eliminating important biophysical information. In this talk, I will discuss our group’s approach to segmentation analysis: an in-house changepoint detection algorithm coupled with a focus on summary statistics that are robust with respect to the inevitable mistakes that changepoint detection algorithms make."
+author2: "Peter Kramer"
+title2: "Molecular Mechanisms in Actively Driven Passively Crosslinked Microtubule Pairs"
+inst2: " Rensselaer Polytechnic Institute"
+dept2: ""
+abstract2: "We apply stochastic modeling to interpret in vitro experiments involving microtubules interacting with the passive crosslinker PRC1 while being crowdsurfed by kinesin in a gliding assay configuration.  When an antiparallel pair of microtubules is crosslinked by PRC1, the kinesin slides the microtubules apart while the PRC1 resists this separation. We examine molecular-scale mechanisms for the two distinct modes of resistance which are observed in experiments.  We further describe a supporting model for how the microtubules being slid by kinesin respond to the load from the PRC1 crosslinkers."
+author3: "Yangyang Wang"
+title3: "A conceptual framework for modeling a latching mechanism for cell cycle regulation"
+inst3: "Brandeis University"
+dept3: ""
+abstract3: "Two identical van der Pol oscillators with mutual inhibition are considered as a conceptual framework for modeling a latching mechanism for cell cycle regulation.  In particular, the oscillators are biased to a latched state in which there is a globally attracting steady-state equilibrium without coupling.  The inhibitory coupling induces stable alternating large-amplitude oscillations that model the normal cell cycle.  A homoclinic bifurcation within the model is found to be responsible for the transition from normal cell cycling to endocycles in which only one of the two oscillators undergoes large-amplitude oscillations."
+author4: "Kasia Rejniak"
+title4: "Data-driven models for guiding adoptive cell therapies in bladder cancer"
+inst4: "Moffitt Cancer Center"
+dept4: ""
+abstract4: "Adoptive cell therapy with tumor infiltrating lymphocytes (ACT-TIL) is a personalized immunotherapy approach that consists of three phases: tumor infiltration by the autologous T cells, ex vivo expansion of the T cells collected after tumor resection, and reinfusion of the expanded T cells into the cancer patient. The specificity of bladder cancer allows for intravesical delivery of drugs and T cells directly to the tumor. Thus, each of the three ACT-TIL phases gives us opportunity to improve and optimize these procedures by combining mathematical modeling with (pre)clinical data. I will discuss mathematical models: agent-based, continuous, and machine learning, that were driven by demographic, histology, and longitudinal ultrasound data, and used to address patient stratification for the ACT-TIL, the role of tumor immune and metabolic landscapes in treatment efficacy, and optimization of multi-treatment scheduling with the goal to maximize bladder tumor response to ACT-TIL."
+---

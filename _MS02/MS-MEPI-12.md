@@ -1,0 +1,27 @@
+---
+layout: group
+author: smb2025
+subgroup: "MEPI"
+subgroup-long: "MEPI-12"
+title: "Incorporating control into infectious disease models"
+organizers: "Michael A. Robert (Virginia Tech)"
+description: "Mathematical models are important for designing and evaluating control strategies for infectious diseases. Models are useful for proposing new control strategies, comparing strategies against one another, and assessing the efficacy of strategies that were implemented during outbreaks. Model results can then be used to inform policy at multiple organization levels from regional approaches to outbreak response to optimization of resources for managing large outbreaks.  In this mini-symposium, we review recent modeling work that focuses on control of infectious diseases and the factors that contribute–or impede–successful control. The talks in the mini-symposium will address issues in control related to pathogens, the environment, population heterogeneities, and host behavior."
+room: "Salon 1"
+code: "MS02"
+part: ""
+author1: "Stacey Smith?"
+title1: "Could COVID-19 mask and vaccine mandates have made a difference if they were rolled out earlier?"
+inst1: "University of Ottawa"
+dept1: "The Department of Mathematics"
+abstract1: "Hospitalizations and deaths due to COVID-19 in Canada declined after the first wave, thanks to nonpharmaceutical interventions and the vaccination campaign starting in December 2020, despite the emergence of highly contagious variants. We used an age-structured extended Susceptible-Exposed-Infected-Recovered compartment model to mimic the transmission of COVID-19 in Ontario from March 1, 2020 to May 31, 2021. We examined several counterfactual scenarios: 1. No mask mandates; 2. No vaccination; 3. Instigating the mask mandate a month earlier; 4. Rolling out the vaccine a month earlier. A one-month-earlier vaccination program could have significantly decreased the number of cases and hospitalizations, but one-month-earlier mask mandates would not have. It follows that the mandates that were implemented in practice were not optimal, but mostly performed well. Our model demonstrates that mask mandates played a vital role in saving lives in the first wave of the COVID-19 outbreak and that the vaccination program was crucial to averting subsequent cases and hospitalizations after it was implemented."
+author2: "Indunil M. Hewage"
+title2: "The population-level impact of COVID-19 vaccines: Investigating the different aspects of vaccine effectiveness."
+inst2: "Washington State University"
+dept2: "Department of Mathematics and Statistics"
+abstract2: "Vaccination programs have helped reduce case numbers and the death toll of COVID-19 significantly over the past few years. The spread and control of COVID-19 have been studied by means of ODE-based compartmental models in a number of studies. However, studies on the different benefits of vaccines, other than blocking infections, remains a paucity. In this study, we developed an ODE-based compartmental model with a separate disease progression path for vaccinated individuals. Several key parameters for the vaccinated individuals were defined in terms of the respective parameters for the non-vaccinated individuals to account for the different facets of vaccine effectiveness: blocking infections; decreasing transmission; expediting recovery; reducing severe morbidity; and preventing disease mortality. Sensitivity analyses and numerical simulations on the reproduction number, infections, and disease-induced deaths provided important insights into the impact of different aspects of vaccine effectiveness on disease control. Disease burden can be reduced drastically with vaccines that have high potential in blocking infections, reducing infectivity, and speeding up recovery."
+author3: "Tin Phan"
+title3: "Mathematical modeling reveals that latently infected cells reactivated by AZD5582 via the non-canonical NF-κB pathway differ substantially from productively infected cells"
+inst3: "Los Alamos National Labs"
+dept3: ""
+abstract3: "AZD5582 (AZD) is a promising latency reversing agent to enable the “shock-and-kill” strategy in HIV-1 cure research, due to its potent ability to reactivate latently infected cells while maintaining high specificity by targeting the non-canonical NF-κB pathway. Previous studies in rhesus macaques have demonstrated that AZD can promote the reactivation of latently infected cells, which can lead to a viral load increase of 2-3 logs. However, the resulting reduction of the latent reservoir is less robust. Quantitative analysis of this phenomenon is difficult due to limited and fluctuating longitudinal viral load data of low amplitude. To overcome this obstacle, we developed an ensemble of mechanistic models and fit the ensemble to a combined data set from 23 macaques treated with AZD in combination with other therapies. The model ensemble recapitulates the reactivation patterns observed in SIV RNA, the change in SIV CA-DNA, and provides robust estimates of key parameters related to the reactivated cells. We find that the reactivated cells may produce fewer viruses, are less susceptible to viral cytotoxicity, and do not interact strongly with the immune response compared to productively infected cells. Reactivated cells also likely enter a temporary state that is refractory to drug effects, prior to their return to latency. These results offer practical insights on how to optimize AZD treatment."
+---

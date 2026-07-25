@@ -1,0 +1,672 @@
+/*
+table.table tbody tr td,
+table.table thead tr th,
+table.table thead {
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+*/
+
+
+/* Sponsor table layout CSS */
+#sponsor th, #sponsor td {
+  padding: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+#sponsor th {
+  background-color: #666666;
+  font-weight: bold;
+}
+#sponsor .sponsor-benefits {
+  background-color: #434343;
+}
+#sponsor .first-column {
+  background-color: #206ca5;
+}
+#sponsor .header {
+  font-size: 26pt;
+  font-weight: bold;
+}
+
+
+
+a {
+	color: #222222;
+}
+
+a:hover {
+	color: #a3aeb6;
+}
+
+a .text-justify {
+	color: #222222 !important;
+}
+
+a .text-justify:hover {
+	color: #a3aeb6 !important;
+}
+
+a .card-body-subgroup {
+	color: #222222 !important;
+}
+
+a .card-body-subgroup:hover {
+	color: #a3aeb6 !important;
+}
+
+a .card-header-subgroup {
+	color: #222222;
+}
+
+a .card-header-subgroup:hover {
+	color: #a3aeb6;
+}
+
+.bright-links > a {
+	color: #37b95f !important;
+}
+
+.bright-links > a:hover {
+	color: #ffd6e0 !important;
+}
+
+.bright {
+	color: #37b95f !important;
+}
+
+
+.main-schedule-table {
+	border: 1px solid #000000;
+}
+
+/* must be above others */
+.default-cols {
+  font-weight: normal;
+  background-color: #e7e7e7 !important;
+	border: 8px solid #ffffff !important;
+}
+
+.white-button {
+  font-weight: normal;
+  background-color: #ffffff !important;
+	border: 8px solid #ffffff !important;
+}
+
+.osu-button {
+  font-weight: normal;
+  background-color: #ffd6e0 !important;
+	border: 8px solid #ffffff !important;
+}
+
+.americas {
+  font-weight: normal;
+  background-color: #e2d7fa !important;
+	border: 8px solid #ffffff !important;
+}
+.europe-africa {
+  font-weight: normal;
+  background-color: #e1f9ed !important;
+	border: 8px solid #ffffff !important;
+}
+.asia-oceania {
+  font-weight: normal;
+  background-color: #fff0f5 !important;
+	border: 8px solid #ffffff !important;
+}
+
+.time-header-cols {
+	background-color: #c7c7c7 !important;
+/* 	border: 1px solid #c7c7c7 !important; */
+
+}
+
+/* Time indicator colors */
+.asleep {
+  background-color: #95b3d7 !important;
+	border: 0px !important;
+}
+
+.awake {
+  background-color: #fffff3 !important;
+	border: 0px !important;
+}
+
+.early-late {
+	background-color: #edfbff !important;
+	border: 0px !important;
+}
+
+
+
+/* time zones */
+
+.timeZone1 { display: block; }
+.timeZone2 { display: none; }
+.timeZone3 { display: none; }
+
+.opening-plenary {
+  background-color: #bd86df !important;
+}
+
+
+/* colors */
+.plenaries {
+  background-color: #bd86df !important;
+}
+
+.minisymposia {
+	background-color: #2A9D8F !important;
+}
+
+.contributeds {
+  background-color: #E76F51 !important;
+}
+
+.posters {
+	background-color: #e9c46a !important;
+}
+
+.excursion {
+  background-color: #a9d08e !important;
+}
+
+
+tr .contributeds,.minisymposia,.plenaries,.posters {
+	min-height: 100px;
+	height: 100px;
+}
+
+.table > tbody > tr > td,td[rowspan] {
+	vertical-align: middle;
+}
+
+.table > thead > tr > td,td[rowspan] {
+	vertical-align: bottom;
+}
+
+
+
+
+
+
+.hide-abstracts {
+	position: absolute !important;
+	top: -99999px !important;
+	left: -99999px !important;
+}
+
+.show-abstracts {
+	min-height: 50px;
+}
+
+
+
+.click-legend{
+	cursor: pointer;
+}
+
+
+
+
+.subgroup-name {
+	margin-bottom: 10px;
+}
+
+.row-group {
+	  margin-bottom: -25px;
+}
+
+.card-header-subgroup {
+	font-family: Georgia,Times,"Times New Roman",serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+
+
+
+
+
+
+.subgroup-name h6 {
+	font-family: Georgia,Times,"Times New Roman",serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: -30px;
+}
+
+.parallel {
+  background-color: #e9ecef !important;
+}
+
+.concurrent {
+  background-color: #e9ecef !important;
+}
+
+.uMMPB {
+  color: #7d66d5 !important;
+  text-decoration: underline;
+  text-decoration-color: #a6c7ea;
+}
+
+.uCBBS {
+  color: #fbe30a !important;
+  text-decoration: underline;
+  text-decoration-color: #a6c7ea; 
+}
+
+.uDDMB {
+  color: #984588 !important;
+  text-decoration: underline;
+  text-decoration-color: #a6c7ea; 
+}
+
+.uCDEV {
+  color: #a6c7ea !important;
+  text-decoration: underline;
+  text-decoration-color: #a6c7ea;
+}
+
+.uCARD {
+  color: #61fdff !important;
+  text-decoration: underline;
+  text-decoration-color: #cffdfe;
+}
+
+.uEDUC {
+  color: #6899ad !important; 
+  text-decoration: underline;
+  text-decoration-color: #6899ad;
+}
+
+.uIMMU {
+  color: #91cfb6 !important; 
+  text-decoration: underline;
+  text-decoration-color: #91cfb6;
+}
+
+.uMEPI {
+  color: #b9cab0 !important;
+  text-decoration: underline;
+  text-decoration-color: #b9cab0; 
+}
+
+.uNEUR {
+  color: #f59598 !important; 
+  text-decoration: underline;
+  text-decoration-color: #f59598;
+}
+
+.uONCO {
+  color: #ceb3d3 !important; 
+  text-decoration: underline;
+  text-decoration-color: #ceb3d3;
+}
+
+.uMFBM {
+  color: #fdbe7d !important; 
+  text-decoration: underline;
+  text-decoration-color: #fdbe7d;
+}
+
+.uPOPD {
+  color: #cdab90 !important; 
+  text-decoration: underline;
+  text-decoration-color: #cdab90;
+}
+
+.uEVOP {
+  color: #cdab90 !important; 
+  text-decoration: underline;
+  text-decoration-color: #cdab90;
+}
+
+.uECOP {
+  color: #8a5d39 !important; 
+  text-decoration: underline;
+  text-decoration-color: #8a5d39;
+}
+
+.uDEI {
+  color: #69dffa !important; 
+  text-decoration: underline;
+  text-decoration-color: #c1c1c1;
+}
+
+
+
+/* text-colors */
+.text-SMB {
+  color: #000000 !important; 
+}
+
+.text-MMPB {
+  color: #7d66d5 !important;  
+}
+
+.text-CBBS {
+  color: #fbe30a !important;  
+}
+
+.text-DDMB {
+  color: #984588 !important;  
+}
+
+.text-DEI {
+  color: #69dffa !important;
+}
+
+.text-CDEV {
+  color: #a6c7ea !important;
+}
+
+.text-CARD {
+  color: #61fdff !important;
+}
+
+.text-EDUC {
+  color: #6899ad !important; 
+}
+
+.text-IMMU {
+  color: #91cfb6 !important; 
+}
+
+.text-MEPI {
+  color: #b9cab0 !important; 
+}
+
+.text-NEUR {
+  color: #f59598 !important; 
+}
+
+.text-ONCO {
+  color: #ceb3d3 !important; 
+}
+
+.text-MFBM {
+  color: #fdbe7d !important; 
+}
+
+.text-POPD {
+  color: #cdab90 !important; 
+}
+
+.text-EVOP {
+  color: #cdab90 !important; 
+}
+
+.text-ECOP {
+  color: #8a5d39 !important; 
+}
+
+.text-SMB {
+  color: #37b95f !important; 
+}
+
+/* BKGD-colors */
+
+
+.MMPB {
+  background-color: #7d66d5 !important;
+  margin-bottom: 10px;  
+}
+
+.CBBS {
+  background-color: #fbe30a !important;
+  margin-bottom: 10px;  
+}
+
+.DDMB {
+  background-color: #984588 !important;
+  margin-bottom: 10px;  
+}
+
+.DEI {
+  background-color: #69dffa !important;
+  margin-bottom: 10px;  
+}
+
+.CDEV {
+  background-color: #a6c7ea !important;
+  margin-bottom: 10px;  
+}
+
+.CARD {
+  background-color: #61fdff !important;
+  margin-bottom: 10px;  
+}
+
+.EDUC {
+  background-color: #6899ad !important; 
+  margin-bottom: 10px;
+}
+
+.IMMU {
+  background-color: #91cfb6 !important; 
+  margin-bottom: 10px;
+}
+
+.MEPI {
+  background-color: #b9cab0 !important; 
+  margin-bottom: 10px;
+}
+
+.NEUR {
+  background-color: #f59598 !important; 
+  margin-bottom: 10px;
+}
+
+.ONCO {
+  background-color: #ceb3d3 !important; 
+  margin-bottom: 10px;
+}
+
+.MFBM {
+  background-color: #fdbe7d !important; 
+  margin-bottom: 10px;
+}
+
+.POPD {
+  background-color: #cdab90 !important; 
+  margin-bottom: 10px;
+}
+
+.EVOP {
+  background-color: #cdab90 !important; 
+  margin-bottom: 10px;
+}
+
+.ECOP {
+  background-color: #8a5d39 !important; 
+  margin-bottom: 10px;
+}
+
+.plenary {
+  background-color: #e8f3ec !important; 
+}
+
+.keynote {
+  background-color: #e8f3ec !important; 
+}
+
+
+
+
+
+
+ol.list-posters {
+	counter-reset:my-awesome-counter-speakers my-awesome-counter-OTHE my-awesome-counter-CDEV my-awesome-counter-CARD my-awesome-counter-IMMU my-awesome-counter-MEPI my-awesome-counter-ONCO my-awesome-counter-MFBM my-awesome-counter-NEUR my-awesome-counter-EDUC my-awesome-counter-POPD;
+	list-style:none;
+	padding-left:0;
+}
+
+
+/* COUNTERS */
+
+ol.list-posters li.subgroup-counter-OTHE {
+	counter-increment:my-awesome-counter-OTHE; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-CDEV {
+	counter-increment:my-awesome-counter-CDEV; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-CARD {
+	counter-increment:my-awesome-counter-CARD; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-IMMU {
+	counter-increment:my-awesome-counter-IMMU; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-MEPI {
+	counter-increment:my-awesome-counter-MEPI; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-ONCO {
+	counter-increment:my-awesome-counter-ONCO; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-MFBM {
+	counter-increment:my-awesome-counter-MFBM; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-EDUC {
+	counter-increment:my-awesome-counter-EDUC; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-NEUR {
+	counter-increment:my-awesome-counter-NEUR; 
+	display:flex; 
+	font-size:0.8rem;
+}
+ol.list-posters li.subgroup-counter-POPD {
+	counter-increment:my-awesome-counter-POPD; 
+	display:flex; 
+	font-size:0.8rem;
+}
+
+ol.list-posters li.subgroup-counter-speakers {
+	counter-increment:my-awesome-counter-speakers; 
+	display:flex; 
+	font-size:0.8rem;
+}
+
+/* COLORS/FORMATTING OF COUNTERS */
+ol.list-posters li.subgroup-counter-OTHE:before {
+    content: counter(my-awesome-counter-OTHE);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #c1c1c1 !important;
+}
+ol.list-posters li.subgroup-counter-CDEV:before {
+    content: counter(my-awesome-counter-CDEV);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; color: #a6c7ea !important;
+}
+ol.list-posters li.subgroup-counter-CARD:before {
+    content: counter(my-awesome-counter-CDEV);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; color: #61fdff !important;
+}
+ol.list-posters li.subgroup-counter-IMMU:before {
+    content: counter(my-awesome-counter-IMMU);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #91cfb6 !important; 
+}
+ol.list-posters li.subgroup-counter-MEPI:before {
+    content: counter(my-awesome-counter-MEPI);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #b9cab0 !important; 
+}
+
+ol.list-posters li.subgroup-counter-ONCO:before {
+    content: counter(my-awesome-counter-ONCO);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #ceb3d3 !important;
+}
+ol.list-posters li.subgroup-counter-MFBM:before {
+    content: counter(my-awesome-counter-MFBM);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #fdbe7d !important;
+}
+
+ol.list-posters li.subgroup-counter-EDUC:before {
+    content: counter(my-awesome-counter-EDUC);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #6899ad !important; 
+}
+
+
+ol.list-posters li.subgroup-counter-NEUR:before {
+    content: counter(my-awesome-counter-NEUR);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1;
+    color: #f59598 !important; 
+}
+ol.list-posters li.subgroup-counter-POPD:before {
+    content: counter(my-awesome-counter-POPD);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #cdab90 !important;
+}
+
+ol.list-posters li.subgroup-counter-speakers:before {
+    content: counter(my-awesome-counter-speakers);
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-right: 0.5rem; 
+    font-family: Arial; 
+    line-height: 1; 
+    color: #000000 !important;
+}
+
+
+

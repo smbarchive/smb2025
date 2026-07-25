@@ -1,0 +1,28 @@
+---
+layout: group
+author: smb2025
+subgroup: "MEPI"
+subgroup-long: "MEPI-11"
+title: "Advances in infectious disease modelling: towards a unifying framework to support the needs of small and large jurisdictions"
+organizers: "Amy Hurford (Memorial University), Michael Li, Public Health Agency of Canada"
+description: "Homogeneous mixing and the aggregation of diverse population groups into one group are frequent simplifying assumptions that may produce erroneous models and recommendations that exacerbate health inequities. Yet, models that make these simplifying assumptions have well-understood dynamics, and can be quickly solved, facilitating data fitting and uncertainty analysis that can support policy recommendations. Advancing the methodology around these model-building tensions is needed, and the best modelling approach may depend on the application. The motivation for developing these modelling approaches is from the COVID-19 pandemic in Canada. Atlantic Canada, the Canadian territories, and other small Canadian jurisdictions experienced different epidemiology, and needed different types of modelling support, than the larger Canadian provinces. There is a need to advance infectious disease modelling to support jurisdictions at all levels, and this session furthers this goal by including talks that describe: infectious disease spread in structured communities; importations and mobility networks; models that were developed for specific small jurisdictions, methods for calculating the reproduction number, estimating healthcare demand, and describing how the needs of small jurisdictions can be integrated into pandemic preparedness plans."
+room: "Salon 12"
+code: "MS09"
+part: "4"
+codes: [MS03/MS-MEPI-11-Part-1, MS04/MS-MEPI-11-Part-2, MS08/MS-MEPI-11-Part-3]
+author2: "Matthew Betti"
+title2: "Modeling healthcare demand during a disease outbreak"
+inst2: "Mount Allison University"
+dept2: "Math & Computer Science"
+abstract2: "One of the driving concerns during any epidemic is the strain on the healthcare system. During severe outbreaks, healthcare systems can become quickly overwhelmed. We develop a healthcare demand module that can take epidemiological data and healthcare parameters and can forecast number of doctor visits, hospital occupancy. Using real-world data we can estimate the length of stay of hospitalized individuals. The module can be extended to account for pharmaceutical and PPE usage at differing levels of conservation."
+author1: "James Watmough"
+title1: "Predicting population level immune landscapes in small communities."
+inst1: "University of New Brunswick"
+dept1: "Mathematics and Statistics"
+abstract1: "Roughly speaking, outbreaks of respiratory infectious, such as measles, CoViD-19, and influenza, are shaped by two main factors: (1) the patterns and nature of contacts between individual hosts, and (2) the distribution of immunity locally and regionally within the host population. The strength and duration of an individual host's immune response depends on individual traits and the characteristics of exposure, which are at least partially dependant on the nature of contacts between hosts. Thus, the dynamics of disease spread and waning immunity at the host-population level are driven by a fixed landscape of immune-traits based on demographics, comorbidities, and other individual factors affecting disease severity, and a dynamic immune landscape shaped by prior outbreaks. Contact patterns between hosts reflect community structure and the relative strengths of within group and between group contacts.  This contact structure can be very different for smaller isolated communities and small communities nestled in larger metropolises. The main objective of this talk is to present preliminary results from simple compartmental and individual-based models designed to predict population-level distributions of disease burden and immunity from host community structure and within-host virus and immune dynamics. Of particular interest is the role of community structure in determining the size and severity of outbreaks in smaller jurisdictions."
+author2: "Amy Hurford"
+title2: "Importation models for travel-related SARS-CoV-2 cases reported in Newfoundland and Labrador during the COVID-19 pandemic"
+inst2: "Memorial University"
+dept2: ""
+abstract2: "During the COVID-19 pandemic the World Health Organization updated guidelines for travel measure implementation to recommend consideration of a region's specific epidemiological, health system, and socioeconomic context. From May 2020 to May 2021, the Canadian province of Newfoundland and Labrador (NL) implemented travel measures that required self-isolation and testing of individuals returning from out-of-province travel. We consider three sources of travel volume data and find that during the pandemic travel to NL decreased by 82%, with the percentage of travelers arriving from Quebec decreasing from 14% to 4% and from Alberta increasing from 10% to 16%. We develop several importation models to predict travel-related cases reported in NL and test the reliability of importation models given different data gaps. A mechanistic model that was parameterized without travel-related case data predicted travel-related cases reasonably well, but was outperformed by statistical models that were fit to these data. Provincial-level data describing daily travel-related cases and daily travel volumes are often unavailable, but our analysis shows that such data are needed to support decisions concerning travel measure implementation during a public health emergency."
+---

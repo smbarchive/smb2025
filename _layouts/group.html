@@ -1,0 +1,454 @@
+---
+layout: default
+---
+{% assign author = site.authors.esmb %}
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+
+<!--
+			<div class="alert alert-danger" role="alert">
+				<h2 class="text-center">This page is intended to be hidden from public view. <br>Please do not share it with anyone.</h2>
+			</div>
+-->
+
+			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+              	
+						
+
+
+				<span class="catlist" style="font-size: 2em;">
+              	<span class="text-{{page.subgroup}}">
+					
+					{% if page.code %} 
+						{{page.code}} 					
+					{% endif %}
+					
+					
+					{% if page.poster %}
+					{% else %}	
+						{% if page.subgroup-long %}
+							- {{page.subgroup-long}}
+						{% else %}	
+							- {{page.subgroup}}
+						{% endif %}
+					{% endif %}
+              	</span>
+              	
+
+				  {% if page.part == "" %}
+				  {% else %}
+				  	<!-- it could still be a poster or CT -->
+				  		{% if page.poster %}
+				  			<span  class="text-{{page.subgroup}}" style="float: right;">{{page.poster}}</span>	
+				  		{% else %}	
+				  			<!-- it could still be a  CT -->
+							  {% assign temp = page.code | slice: 0, 2 %}
+								{% if temp == "CT" %}
+								{% else %}
+				  					<span  class="text-{{page.subgroup}}" style="float: right;">Part {{page.part}} of {{ page.codes | size | plus: 1 }}</span>			  
+				  				{% endif %}
+				  		{% endif %}
+				  {% endif %}
+
+
+              						
+              </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">{{ page.title }}
+						{% if page.part == "" %}
+			  			{% else %}
+			  				{% if page.part %}
+			  					(Part {{page.part}})
+			  				{% endif %}	
+			  			{% endif %}						
+					</h1>
+					<h4>{{site.authors.esmb[page.code]}} in <strong><span class="text-{{page.subgroup}}">{{page.room}}</span></strong><h4>
+					<div class="d-flex align-items-center">
+                        {% if author.avatar %}
+                        <img src="../{{author.avatar}}" alt="{{author.name}}" width="70"/>
+                        {% endif %}
+						<small class="ml-3"> {{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
+              <!-- <span class="text-muted d-block mt-1">{{ page.day }} during the "{{page.code}}" time block. </br> Room assignment: {{page.room}} in <a href="https://ohiounion.osu.edu/" class="bright" target="_blank">The Ohio Union</a>.</span> -->
+						</small>
+					</div>
+				</div>
+				<!-- codes can be: [code, code-1, code-2, code-3 -->
+				{% if page.codes %}
+					<p class="ml-3 bright-links">Note: this minisymposia has multiple sessions. 
+					
+					{% if page.codes.size > 1 %} <!-- should be plural, lol -->
+						The other sessions are:
+					{% else %}
+						The other session is:
+					{% endif %}
+					
+					{% for eachcode in page.codes %}
+						{% if forloop.last == true %}
+							and <a href="../{{eachcode}}.html" class="btn btn-success btn-sm btn-round ml-1 text-white" style="color: white !important;">{{ eachcode | slice: -6, 6 }}</a>.
+						{% else %}
+							<a href="../{{eachcode}}.html" class="btn btn-success btn-sm btn-round ml-1 text-white" style="color: white !important;">{{ eachcode | slice: -6, 6 }}</a>
+						{% endif %}
+					{% endfor %}						
+						
+					</p></br></br>
+				{% endif %}
+        {% if page.image %}
+					<div class="col-md-6 pr-0 align-self-center">
+						<img class="rounded" src="../{{ page.image }}" alt="{{ page.title }}">
+					</div>
+        {% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
+        
+        <!-- Share -->
+				<div class="col-lg-2 pr-4 mb-4 col-md-12">
+					<div class="sticky-top sticky-top-offset text-center">
+						<div class="text-muted">
+							Share this
+						</div>
+						<div class="share d-inline-block">
+							<!-- AddToAny BEGIN -->
+							<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+								<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+								<a class="a2a_button_facebook"></a>
+								<a class="a2a_button_twitter"></a>
+							</div>
+							<script async src="https://static.addtoany.com/menu/page.js"></script>
+							<!-- AddToAny END -->
+						</div>
+					</div>
+				</div>
+        
+        
+		<div class="col-md-12 col-lg-10">
+			
+			{% if page.organizers %}
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem {{page.subgroup}} position-relative">
+		    <div class="pl-4 pr-0 h-100 tofront">
+		        <div class="row justify-content-between">
+		            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+		                <p><strong>Organizers:</strong></p>
+		                <h4 class="mb-3">{{ page.organizers }}</h4>
+		                
+		                {% if page.description %}
+		                	<p><strong>Description</strong>:</p> 
+		                	<p>{{page.description}}</p>
+			            {% endif %}
+
+						{% if page.room %}
+		                	<p><strong>Room assignment</strong>: {{page.room}}</p> 
+			            {% endif %}
+
+						{% if page.diversity %}
+		                	<p><strong>Diversity Statement</strong>:</p> 
+		                	<p>{{page.diversity}}</p>
+			            {% endif %}
+		            </div>             
+		        </div>
+		    </div>
+			</div>
+			</br>
+			</br>
+			{% endif %}		
+			
+			
+			
+			{% if page.chair %}
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem {{page.subgroup}} position-relative">
+		    <div class="pl-4 pr-0 h-100 tofront">
+		        <div class="row justify-content-between">
+		            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+		                <p>The chair of this session is <strong>{{ page.chair }}</strong>.</p>						
+		            </div>             
+		        </div>
+		    </div>
+			</div>
+			</br>
+			</br>
+			{% endif %}			
+			
+			{% if page.poster %}
+	    	<h4 id="author1">{{ page.author }}</h4>
+	    	{% if page.inst %} 
+	    		<em>{{ page.inst }}</em>
+	    	{% endif %}
+	    	
+	    	{% if page.title %}
+	    		{% if page.title == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	
+	    	
+	    	{% if page.abstract %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% endif %}
+			
+			
+		{% if page.author1 %}
+	    	<h4 id="author1">{{ page.author1 }}</h4>
+	    	{% if page.inst1 %} 
+	    		<em>{{ page.inst1 }}</em>
+	    	{% endif %}
+	    	
+	    	{% if page.title1 %}
+	    		{% if page.title1 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title1 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	
+	    	
+	    	{% if page.abstract1 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract1 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract1 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% else %}
+<!-- 	    	<p>Note: this minisymposia has been accepted, but the abstracts have not yet been finalized.</p>	 -->
+				
+	    {% endif %}
+	    
+	    
+	    
+	    {% if page.author2 %}
+	    	</br><hr>
+			</br>
+	    	<h4 id="author2">{{ page.author2 }}</h4>
+	    	{% if page.inst2 %} 
+	    		<em>{{ page.inst2 }}</em>
+	    	{% endif %}
+	    	{% if page.title2 %}
+	    		{% if page.title2 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title2 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	
+	    	{% if page.abstract2 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract2 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract2 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+
+	    {% endif %}
+	    
+	    
+	    
+	    {% if page.author3 %}
+	    	</br><hr>
+			</br>
+	    	<h4 id="author3">{{ page.author3 }}</h4>
+	    	{% if page.inst3 %} 
+	    		<em>{{ page.inst3 }}</em>
+	    	{% endif %}
+	    	{% if page.title3 %}
+	    		{% if page.title3 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title3 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	{% if page.abstract3 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract3 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract3 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% endif %}
+	    
+			
+	    
+	    {% if page.author4 %}
+	    	</br><hr>
+			</br>
+	    	<h4 id="author4">{{ page.author4 }}</h4>
+	    	{% if page.inst4 %} 
+	    		<em>{{ page.inst4 }}</em>
+	    	{% endif %}
+	    	{% if page.title4 %}
+	    		{% if page.title4 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title4 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	{% if page.abstract4 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract4 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract4 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% endif %}
+	    
+	    
+	    
+	    {% if page.author5 %}
+		    </br><hr>
+			</br>
+	    	<h4 id="author5">{{ page.author5 }}</h4>
+	    	{% if page.inst5 %} 
+	    		<em>{{ page.inst5 }}</em>
+	    	{% endif %}
+	    	{% if page.title5 %}
+	    		{% if page.title5 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title5 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	{% if page.abstract5 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract5 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract5 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% endif %}
+	    
+	    
+	    
+	    {% if page.author6 %}
+	    	</br><hr>
+			</br>
+	    	<h4 id="author6">{{ page.author6 }}</h4>
+	    	{% if page.inst6 %} 
+	    		<em>{{ page.inst6 }}</em>
+	    	{% endif %}
+	    	{% if page.title6 %}
+	    		{% if page.title6 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title6 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	{% if page.abstract6 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract6 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract6 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% endif %}
+
+		{% if page.author7 %}
+	    	</br><hr>
+			</br>
+	    	<h4 id="author7">{{ page.author7 }}</h4>
+	    	{% if page.inst7 %} 
+	    		<em>{{ page.inst7 }}</em>
+	    	{% endif %}
+	    	{% if page.title7 %}
+	    		{% if page.title7 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title7 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	{% if page.abstract7 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract7 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract7 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% endif %}
+
+		{% if page.author8 %}
+	    	</br><hr>
+			</br>
+	    	<h4 id="author8">{{ page.author8 }}</h4>
+	    	{% if page.inst8 %} 
+	    		<em>{{ page.inst8 }}</em>
+	    	{% endif %}
+	    	{% if page.title8 %}
+	    		{% if page.title8 == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title8 }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	{% if page.abstract8 %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract8 == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract8 }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+	    {% endif %}
+	    
+	    </br><hr>
+			</br>
+	      
+			<!-- Author Box -->
+      {% if author %}				
+			<div class="row mt-5">
+				<div class="col-md-2 align-self-center">
+                       {% if author.avatar %}
+                      <img src="../{{author.avatar}}" alt="{{author.name}}" width="90"/>
+                      {% endif %} 
+				</div>
+				<div class="col-md-10">		
+                      <h5 class="font-weight-bold">#{{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
+					{{ author.bio }}					
+				</div>
+			</div>				
+      {% endif %}
+      
+      <!-- Comments -->
+      {% if page.comments != false %}
+          {% include comments.html %}
+      {% endif %}
+            
+		</div>
+        
+        
+	</div>
+</div>
+
+

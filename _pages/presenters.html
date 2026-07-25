@@ -1,0 +1,138 @@
+---
+title: "All Presenters"
+layout: default
+pagination:
+    enabled: false
+description: "The Society for Mathematical Biology - Annual Meeting 2025."
+permalink: /presenters/
+---
+
+<div class="container">
+	
+	{% assign author = site.authors.esmb %}
+	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+			<div class="h-100 tofront">
+				<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+					<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+						<p class="text-uppercase font-weight-bold">
+			              <span class="catlist">
+			              	<span class="text-SMB">SMB2025</span>		
+			              </span>
+						</p>
+						<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+	<div class="row mt-3">   
+		<div class="col-md-12 main-loop">
+			
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem parallel position-relative">
+			    <div class="pl-4 pr-0 h-100 tofront">
+			        <div class="row justify-content-between">
+			            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+			                <h1 class="mb-3" id="{{page.code}}">{{page.title}}</h1>
+			                
+			                <p>Please scroll down for the complete list of presenters (minisymposia, contributed talk, or poster presenter). A name may be listed twice if that person is involved in multiple sessions.</p>
+
+			                
+			                {% assign sortedPresenters = site.Presenters | sort: 'name' %}
+			                
+			                <ol class="list-posters list-OTHE list-OTHE list-IMMU list-MEPI list-CDEV list-ONCO list-POPD list-EDUC list-NEUR list-MFBM">
+						    	<div class="row  d-none d-md-inline">
+							    	<h6> 
+								    	<div class="row">
+									    	<div class="col-1 text-center">
+									    	</div>
+									    	<div class="col-2 text-right">
+										    	<span class="text-OTHE"><strong>Session</strong></span>
+									    	</div>
+									    	<div class="col-2 text-left">
+										    	<span class="text-OTHE"><strong>Subgroup</strong></span>
+									    	</div>
+									    	<div class="col-7 text-left">
+										    	<strong>Presenter's name</strong>
+									    	</div>
+								    	</div>
+							    	</h6>
+						    	</div>
+						    	<hr></br>
+						  
+						  {% assign plenary_speakers = site.Plenary | sort: 'numbering' %}
+						  
+						  {% for presenter in plenary_speakers %}						    	
+						    	<a href="../plenary/plenary-{{ presenter.numbering }}.html">
+							    	<h6> 
+								    	<div class="row">
+									    	<div class="col-1 text-center  d-none d-md-inline">
+										    	<li class="subgroup-counter subgroup-counter-speakers"></li>
+									    	</div>
+									    	<div class="col-2 text-right">
+										    	<span ><strong>PL-{{ presenter.numbering}}</strong></span>
+									    	</div>
+									    	<div class="col-2 text-left">
+										    	<span class="text-{{ presenter.subgroup}}"><strong> Plenary </strong></span>
+									    	</div>
+									    	<div class="col-7 text-left">
+										    	<strong>{{ presenter.speaker }}</strong></br><small>(Plenary Speaker)</small>
+									    	</div>
+								    	</div>								    	
+							    	</h6>
+						    	</a>
+						    	
+								</br>
+						  {% endfor %}
+						  
+						  
+						  
+						  
+				                
+			                {% for presenter in sortedPresenters %}							
+			                
+						      	<a href="../{{presenter.subgroup}}/{{ presenter.markdown-title }}.html">
+							    	<h6> 
+								    	<div class="row">
+									    	<div class="col-1 text-center  d-none d-md-inline">
+										    	<li class="subgroup-counter subgroup-counter-speakers"></li>
+									    	</div>
+									    	<div class="col-2 text-right">
+										    	<span><strong>{{ presenter.code}}</strong></span>
+									    	</div>
+									    	<div class="col-2 text-left">
+										    	<span class="text-{{ presenter.subgroup}}"><strong>{{ presenter.subgroup}}</strong></span>
+									    	</div>
+									    	<div class="col-7 text-left">
+										    	<strong>{{ presenter.name }}</strong></br><small>({{ presenter.tag }})</small>
+									    	</div>
+								    	</div>								    	
+							    	</h6>
+						    	</a>
+						    	
+								</br>
+							{% endfor %}
+							</ol>
+							
+							
+			            </div>             
+			        </div>
+			    </div>
+			</div>
+			{% include footer.html %}
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

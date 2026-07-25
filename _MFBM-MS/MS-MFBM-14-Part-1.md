@@ -1,0 +1,39 @@
+---
+layout: group
+author: smb2025
+subgroup: "MFBM"
+subgroup-long: "MFBM-14"
+title: "Multicellular Agent-Based Modelling - The OpenVT Project"
+organizers: "James Osborne (University of Melbourne), James Glazier (Indiana University) 
+Yi Jiang (Georgia State University)"
+description: "Multicellular simulations have become indispensable in understanding complex biological phenomena, from tissue development to disease progression. But the diversity in simulation methods - from agent-based models, lattice-free models, stochastic particle simulations, etc - poses challenges in reproducibility, modularity, reusability, and integration within multi-scale simulation. This minisymposia aims to present the variety of multicellular simulations being used by the community along with the efforts to make these simulations replicable and reproducible. Through a series of scientific presentations, we will demonstrate the need for standardization, and the importance of sharing and reusing models.
+
+The minisymposia is broken up into three parts; 
+Parts 1 and 2: Modelling Biological Systems 1 and 2.
+Part 3: Reproducibility and Standards.
+
+Parts 1 and 2 of the Minisymposia (Modelling Biological Systems 1 and 2) contain a series of scientifically focused talks to demonstrate the variety of modelling techniques and applications being used in multicellular simulations. These talks have a scientific focus however each talk will have 5 minutes dedicated to model specification/reproducibility/comparison. 
+
+Part 3 of the Minisymposia (Reproducibility and Standards) contains a series of talks on the current efforts in reproducibility and standards for multicellular simulations including a report on the OpenVT Satellite meeting reproducibility challenge."
+room: "Salon 8"
+code: "MS01"
+part: "1"
+codes: [MS02/MS-MFBM-14-Part-2, MS08/MS-MFBM-14-Part-3]
+author1: "Yi Jiang"
+title1: "Multicellular Modelling of Collective Cancer Invasion"
+inst1: "Georgia State University, USA"
+dept1: ""
+abstract1: "Collective invasion enhances cancer metastasis. However, the mechanisms underlying cancer collective invasion remains poorly understood. I will discuss two types of collective invasion, one with leaders and followers that engage in mutualistic social interactions, the other involves hypoxia induced secretome. We use cell-based multiscale models to elucidate the physical mechanisms for the emergence of collective behavior. In the leader-follower invasion, cell-cell adhesion and cell migration are the key drivers of migration patterns, while in the microenvironment-induced invasion, protrusion force and adhesion together give rise to symmetry breaking and directional migration. The results from the experimental and computational models combined provide new insights into tumor metastasis in terms of tumor heterogeneity and cellular response to microenvironmental stimuli"
+author2: "Jupiter Algorta"
+title2: "Simulating Cell Decisions and Embryo Structure with Morpheus"
+inst2: "University of British Columbia, CANADA"
+dept2: ""
+abstract2: "One of the most fascinating aspects of early embryonic development is how a single cell gives rise to a structured, multicellular organism. In mammals, this process begins with a few identical cells that divide and gradually acquire distinct identities. These identities not only depend on each cell’s own internal machinery but also emerge from how cells interact with their neighbors and their environment. In this project, we modeled two critical stages of this developmental process. First, cells differentiate between becoming part of the outer layer (which contributes to the placenta) or the inner group (which forms the embryo proper). This initial decision is governed by how cells contact one another. Second, cells in the inner group further specialize, influenced by a signaling molecule called FGF4, which spreads through the surrounding space and nudges cells toward one of two fates: forming the future embryo (epiblast) or a supporting layer (primitive endoderm). To capture this complex cascade of decisions, we translated two detailed models by De Mot et al. (2016) and Cang et al. (2021) into a unified spatial simulation using Morpheus, a platform for multiscale modeling. These existing models describe how genes interact within each cell through systems of equations, while our goal was to bring them into a spatial context, allowing cells to move, divide, and interact in space, while still carrying out their internal decision-making logic. While the original models include dozens of interacting components and parameters, Morpheus’ design made it possible to integrate these internal processes with the physical layout and behaviour of the cells. Each simulated cell runs its own internal 'program' while also communicating with others through contact or diffusing signals in the surrounding space. The platform’s graphical interface and modular setup made this a manageable task, even for undergraduate researchers. Our resulting simulation recreates known patterns of cell arrangement and fate specification seen in real embryos. More importantly, this case study illustrates how modeling tools like Morpheus can help translate complex biological mechanisms into testable, visual models, even when starting from dense theoretical descriptions."
+author3: "Andreas Buttenschoen"
+title3: "Robust Numerical Methods for cells invading extracellular matrix: Adaptive Time-stepping and preconditioning for reproducible multicellular models"
+inst3: "University of Massachusetts, USA"
+dept3: ""
+abstract3: "Cell migration through extracellular matrix (ECM) environments represents a fundamental biological process essential for development, immune response, wound healing, and cancer metastasis. This migration presents significant physical challenges as cells must simultaneously use the ECM as a substrate for force transmission while overcoming its role as a mechanical barrier. In this talk, I will present a physics-based computational model that elucidates how cells employ three primary 'space negotiation' strategies to navigate dense ECM: (1) adaptive cellular deformation, (2) mechanical remodeling of surrounding matrix, and (3) enzymatic degradation via matrix metalloproteinases (MMPs).
+Our model captures the essential mechanical interactions between deformable rod-shaped cells and a viscoelastic fiber network, with cells extending filopodia that establish adhesion sites and generate traction forces. Through systematic computational analysis, we demonstrate that cellular migration efficiency exhibits a biphasic response to ECM density, with optimal migration occurring at intermediate pore sizes that match nuclear dimensions. We further show that different microenvironmental contexts necessitate distinct combinations of space negotiation strategies - while ECM degradation is dispensable in pre-formed tracks, it becomes essential in dense matrices where nuclear size represents the primary migration-limiting factor.
+In the final portion of this talk, I will discuss the numerical methods that enable robust and reproducible simulation of these complex multicellular systems. Specifically, I will present our implementation of adaptive time-stepping using embedded Runge-Kutta methods that allow users to specify absolute and relative error tolerances, ensuring reliable integration of agent-based models. Additionally, I will describe graph-based preconditioning techniques for efficiently solving the overdamped Langevin dynamics with anisotropic friction tensors, and discuss memory management strategies using smart pointers and double buffering that significantly improve computational performance. These numerical advances enable simulation of larger multicellular collectives while maintaining mechanistic fidelity at the single-cell level."
+---

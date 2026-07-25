@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "EDUC"
+subgroup-long: "EDUC-01"
+title: "Recent perspectives on mathematical-biology education"
+organizers: "Stacey Smith? (The University of Ottawa)"
+description: "This minisymposium will bring together education experts to examine up-to-the-minute problems that showcase the usefulness and applicability of mathematical biology in education in a post-COVID world. Now that online and hybrid teaching are tools that can be easily integrated, how has the classroom changed? What are the challenges in teaching a cohort that is effectively missing high-school education? How do educational philosophies differ across global communities? The audience is the mathematical biologist with an interest in education. This includes students, postdocs and professors, mathematicians interested in seeing biological applications and biologists who wish to see how mathematics can be used in teaching."
+room: "Salon 1"
+code: "MS07"
+part: "1"
+codes: [MS08/MS-EDUC-01-Part-2]
+author1: "Kathleen Hoffman"
+title1: "Improvement of Quantitative Reasoning Skills in Transfer and Direct Entry Students Exposed to Cell Biology Modules"
+inst1: "University of Maryland, Baltimore County"
+dept1: ""
+abstract1: "Calls for transforming biological curricula have emphasized a need for interdisciplinary STEM education. To address this, we designed six modules to develop quantitative reasoning competencies for a sophomore-level Cell Biology course. We analyzed validated, pre-post measurements of specific quantitative competencies to determine the effects of the modules on student proficiencies. Students showed significant total growth in quantitative goals for all modules and had significant positive correlations between final course grades, post-assessment performance, and overall gain across the modules with some differences between direct-entry and transfers students. Attitude assessments showed that students had an overall positive experience with the modules. Our data suggest that adding quantitative modules to core biology courses can promote student understanding of quantitative concepts for both direct entry and transfer students and can promote transfer student success in particular."
+author2: "Meredith Greer"
+title2: "Assessment Strategies in the Teaching of Mathematical Biology"
+inst2: "Bates College"
+dept2: ""
+abstract2: "Students have great fun learning about mathematical models in biology, and many faculty love to create these experiences. However, it can be challenging to develop meaningful ways to assess student progress. Exams in a modeling class may be an option, but the full modeling process can be messy, and modeling requires the sort of iteration that does not fit well into a timed test. Homework, papers, and projects all have potential advantages, such as allowing plenty of time for thinking, revision, and perhaps teamwork. Yet grading these assignments takes a long time in a way that does not scale up well to large courses, and faculty want to make sure the work is done by students, not generative AI. In-class activities, possibly in groups, and complete with deliverables, provide yet another possibility to consider. In this session we discuss multiple possibilities in greater detail. Time-permitting, we also open up discussion to the audience, to share more ideas and build a conversation about feasible and productive ways to assess student work in mathematical biology courses."
+author3: "Angela Peace"
+title3: "Teaching Mathematical Ecology across the disciplines"
+inst3: "Texas Tech University"
+dept3: ""
+abstract3: "Effective collaboration between mathematics and biology is essential for tackling today’s complex ecological challenges—but it starts in the classroom. Here, I explore strategies for teaching Mathematical Ecology in a cross-disciplinary setting, with a focus on fostering communication and collaboration between mathematics and biology graduate students. I’ll share approaches for designing integrative courses and team-based projects where students learn not only ecological modeling and quantitative analysis, but also how to bridge disciplinary languages, assumptions, and problem-solving styles. I will highlight lessons I learned in designing and delivering curricula that bring students together and discuss common challenges: like mismatched expectations, uneven preparation, and differing views on modelling approaches."
+author4: "Rebecca Everett"
+title4: "Building an Applied Track at a Small Liberal Arts College: A Work in Progress"
+inst4: "Haverford College"
+dept4: ""
+abstract4: "As a new hire at Haverford College seven years ago, one of the goals of the department was to incorporate applied math into the math major. We have now completed our second year with three focuses/tracks through our major: pure, applied, and statistics. In this talk, I will reflect on various aspects of incorporating applied mathematics into our program. We will discuss our applied track courses and adjustments we are making along the way, applied projects in the intro and upper-level courses, and the department’s learning goals of mastery; communication; breadth of knowledge; and independence, resilience, and persistence."
+---

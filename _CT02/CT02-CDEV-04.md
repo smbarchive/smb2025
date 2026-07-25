@@ -1,0 +1,22 @@
+---
+layout: group
+author: smb2025
+subgroup: "CDEV"
+room: "Salon 13/14"
+code: "CT02"
+title: "CDEV-04 Contributed Talks"
+subgroup-long: "CDEV-04"
+author1: "Devi Prasad Panigrahi"
+inst1: "University College London"
+title1: "Intermittent attractions lead to emergent material properties in migrating cell aggregates"
+abstract1: "Cells migrate in response to gradients in extra-cellular chemical signals in a process known as chemotaxis. Recent experiments on the model microorganism Dictyostelium discoideum have shown that dense aggregates of cells collectively undergoing chemotaxis exhibit emergent fluid-like properties such as viscosity and surface tension. In this work, we use simulations to explain how active interactions between cells give rise to these emergent phenomena. We propose an agent-based model for intermittent cell-cell attachments and show that it gives rise to emergent fluid-like behavior for an aggregate of cells. We generalize this model to include cell-surface attachments, and show that surface-associated aggregates display properties similar to a liquid droplet resting on a surface. Furthermore, we study the situation where cells self-generate and respond to a chemical gradient by consuming an externally supplied chemoattractant. Our simulations reveal how individual cells move inside the swarm as the cells move as a collective. Finally, we predict some of the key cellular processes that are responsible for this collective behavior, and provide hypotheses to be tested in future experimental studies."
+author2: "Connor Shrader"
+inst2: "University of Utah"
+title2: "Quantifying the roles of drift and selection in spermatogonial stem cell dynamics"
+abstract2: "Stem cells maintain and repair our tissues, but not all stem cells are identical. As organisms age, distinct stem cell 'clones' can begin to dominate the cell population. While this behavior has been observed across multiple species and organs, the mechanisms and consequences of stem cell clonality are still poorly understood. We have developed a novel experimental approach using a CRISPR-Cas9 system to uniquely “barcode” spermatogonial stem cell clones in the testes of male zebrafish. Once these fish reach sexual maturity, we sample sperm each month to determine the contribution of each stem cell clone to the sperm pool over time. The observed clonal dynamics may be driven by factors such as genetic drift, selection, or sampling error. We hypothesize that a small number of clones are under positive selection, resulting in their eventual dominance in the sperm pool. To bridge the gap between theory and data, we have developed stochastic models of stem cell dynamics in the testis. These models are formulated as hidden Markov models that describe rules for the division and differentiation of stem cells within the testis. We first evaluate our ability to estimate model parameters on simulated data. Then, we apply our model to the experimental data to quantify evidence for genetic drift and selection. Our models provide insight into how individual stem cell behavior can lead to population-level clonality."
+chair: "Connor Shrader"
+author3: "Wesley Ridgway"
+inst3: "University of Oxford"
+title3: "Motility-Induced Patterning in Signalling Bacteria"
+abstract3: "Chemical signaling, or quorum sensing (QS), promotes collective behaviour in bacteria, from biofilm formation to swarming. By coupling QS systems with genes that control motility, bacteria can be engineered to generate tunable spatio-temporal patterns in vitro. However, it is not well-understood in general how the type of gene-regulatory network affects emergent population-level patterning.  In this talk, we investigate the effect of the gene-regulatory network on emergent patterning in a population of motile bacteria that interact via QS. By formally upscaling a cell-level model in a biologically relevant scaling regime, we derive a continuum model that explicitly accounts for genetic regulation of motility and signal production through chemical structuring. Using a WKBJ-like framework, we derive criteria for the onset of two types of emergent patterning for a canonical QS circuit. We also uncover a new route to the well-known phenomenon of motility-induced phase separation (MIPS) through genetic regulation of tumbling frequency.  Lastly, we discuss generalisations of our WKBJ-like analysis to more complex gene-regulatory networks that exhibit bistability."
+---

@@ -1,0 +1,26 @@
+---
+layout: group
+author: smb2025
+subgroup: "CDEV"
+room: "Salon 2"
+code: "CT01"
+title: "CDEV-02 Contributed Talks"
+subgroup-long: "CDEV-02"
+author1: "Somdatta Sinha"
+inst1: "Indian Institute of Science Education Research"
+title1: "using networks for modelling three-dimensional structures of proteins"
+abstract1: "Proteins are macromolecules in the cell performing most of the metabolic processes. The protein is made up of a linear chain of amino-acids (primary structure) synthesized, through transcription and translation of the corresponding gene/DNA sequence inside the cell. The functional protein is a three-dimensional structure that is formed due to spontaneous or assisted folding of the linear chain decided by the physicochemical forces exerted due to the size, charge and chemical nature of the amino acids. The 3D structure essentially determines the function of the protein - known as the 'Structure-Function paradigm' in molecular biophysics. We have modelled the 3-dimensional structure of proteins using the network/graph theory, where the amino acids are the nodes, and links are the physicochemical forces that hold any two amino acids together. I will show how the network approach can clearly explain the large functional differences in proteins and their mutants, having insignificant structural variations, not easily identifiable using standard structural biology methods, and thereby questioning the universality of the 'Structure-Function paradigm'."
+chair: "Somdatta Sinha"
+author2: "Nathan Smyers"
+inst2: "University of North Carolina at Chapel Hill"
+title2: "From Data to Dynamics: Uncovering Cell Signaling Networks with Physics-Informed Machine Learning"
+abstract2: "Cell signaling is governed by complex networks of biochemical interactions. These networks are critical for a wide range of cellular functions, including detecting environmental changes and cellular motility. Modeling these processes with reaction-diffusion equations (RDEs) requires prior knowledge of protein-protein interactions for constructing the underlying network. The complex nature of signaling pathways means many relevant interactions may be unknown. To address this challenge, we developed a deep learning-based method to infer reaction networks from data. By integrating a physics-informed neural network (PINN) with a neural network for symbolic regression, this method learns interpretable RDE models from spatiotemporal data, effectively learning the biochemical reactions driving dynamics. To develop and validate our approach, we applied it to data generated from a model of cell polarity establishment. This approach has the potential to overcome limitations from incomplete knowledge of protein-protein interactions, serving as a powerful tool for uncovering how cells regulate complex behaviors."
+author3: "Anna Nelson"
+inst3: "University of New Mexico"
+title3: "Modeling mechanisms of microtubule dynamics and polarity in neurons"
+abstract3: "The stability and polarity of the microtubule cytoskeleton is required for long-range, sustained  transport within neuronal cellsl. In particular, the healthy microtubule cytoskeleton is comprised of tubulin protein and is stable with a particular orientation. However, when injured, these microtubules are dynamic, rearrange their orientation, and the appearance of microtubules is upregulated. It is unknown what mechanisms are involved in this balance between dynamic rearrangement and sustained function. Using a stochastic mathematical model that incorporates experimental data, we seek to understand how nucleation can impact microtubule dynamics in dendrites of fruit fly neurons. In the stochastic model, we assume two mechanisms limit microtubule growth: limited tubulin availability and the dependence of shrinking events on microtubule length. To better understand our stochastic model, we develop a partial differential equation (PDE) model that describes microtubule growth and nucleation dynamics, and we compare analytical results to results from the complex stochastic model. Insights from these models can then be used to understand what mechanisms are used organize into polarized structures in neurons, and how microtubule dynamics, like nucleation, may impact cargo localization post-injury."
+author4: "Dietmar Oelz"
+inst4: "The University of Queensland"
+title4: "Mechanochemical pattern formation in Hydra"
+abstract4: "Tissue morphogenesis involves the self-organized creation of patterns and shapes. In many cases details of underlying mechanisms are elusive, yet an increasing amount of experimental data suggests that chemical morphogens and mechanical processes are strongly coupled.  Here, we develop and simulate a minimal model for the emergence of asymmetry in aggregates of the Hydra polyp based on mechanochemical coupling of surface stiffness and a morphogen concentration. We contrast this model with the classical morphogen patterning mechanisms based on Turing type reaction diffusion systems. In analogy to this classical mechnism, we carry out the stability analysis of the lower dimensional toy model and identify minimal conditions for symmetry breaking. Our results suggest that mechanochemical pattern formation underlies symmetry breaking in Hydra."
+---

@@ -1,0 +1,162 @@
+{% assign sortedPosts = site.posts | sort: 'subgroup' %}
+{% for ms in sortedPosts %}
+	{% if ms.day == include.myday %}
+		{% if ms.group == include.mygroup %}		
+				<div class="row subgroup-name">
+					<div class="col-12">
+						<div class="card">
+							<a href="{{ ms.url | prepend: site.baseurl | replace: '//', '/' }}">
+						  	<h5 class="card-header card-header-subgroup {{ms.subgroup}}">{{ms.subgroup}}: {{ ms.title }} ({{ include.mytime }})</h5>
+							</a>
+						  <div class="card-body">
+						    <p class="card-text">			    
+				    			<h6 class="card-subtitle mb-2"></h6>
+				    			
+				    			<ul>
+							    	{% if ms.author1 %}
+								    	<li><a href="{{ ms.url | prepend: site.baseurl | replace: '//', '/' }}#author1"><strong class="card-body-subgroup">{{ ms.author1 }}</strong></a>
+								    	{% if ms.inst1 %} 
+								    		<em>{{ ms.inst1 }}</em>
+								    	{% endif %}
+								    	{% if ms.title1 %}
+								    		{% if ms.title1 == "" %} 
+								    			</br>"Title to be determined."</li>
+								    		{% else %}
+								    			</br>"{{ ms.title1 }}"</li>
+								    		{% endif %}
+								    	{% endif %}
+								    	
+								    	{% if ms.abstract1 %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<span class="hide-abstracts">
+									    			{{ ms.abstract1 }}
+									    		</span>
+									    	</article>
+								    	{% endif %}
+								    	
+								    {% endif %}
+								    
+								    {% if ms.author2 %}
+								    	<li><a href="{{ ms.url | prepend: site.baseurl | replace: '//', '/' }}#author2"><strong class="card-body-subgroup">{{ ms.author2 }}</strong></a>
+								    	{% if ms.inst2 %} 
+								    		<em>{{ ms.inst2 }}</em>
+								    	{% endif %}
+								    	{% if ms.title2 %}
+								    		{% if ms.title2 == "" %} 
+								    			</br>"Title to be determined."</li>
+								    		{% else %}
+								    			</br>"{{ ms.title2 }}"</li>
+								    		{% endif %}
+								    	{% endif %}
+								    	
+								    	{% if ms.abstract2 %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<span class="hide-abstracts">
+									    			{{ ms.abstract2 }}
+									    		</span>
+									    	</article>
+								    	{% endif %}
+								    	
+								    {% endif %}
+								    
+								    {% if ms.author3 %}
+								    	<li><a href="{{ ms.url | prepend: site.baseurl | replace: '//', '/' }}#author3"><strong class="card-body-subgroup">{{ ms.author3 }}</strong></a>
+								    	{% if ms.inst3 %} 
+								    		<em>{{ ms.inst3 }}</em>
+								    	{% endif %}
+								    	{% if ms.title3 %}
+								    		{% if ms.title3 == "" %} 
+								    			</br>"Title to be determined."</li>
+								    		{% else %}
+								    			</br>"{{ ms.title3 }}"</li>
+								    		{% endif %}
+								    	{% endif %}
+								    	
+								    	{% if ms.abstract3 %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<span class="hide-abstracts">
+									    			{{ ms.abstract3 }}
+									    		</span>
+									    	</article>
+								    	{% endif %}
+								    	
+								    {% endif %}
+								    
+								    {% if ms.author4 %}
+								    	<li><a href="{{ ms.url | prepend: site.baseurl | replace: '//', '/' }}#author4"><strong class="card-body-subgroup">{{ ms.author4 }}</strong></a>
+								    	{% if ms.inst4 %} 
+								    		<em>{{ ms.inst4 }}</em>
+								    	{% endif %}
+								    	{% if ms.title4 %}
+								    		{% if ms.title4 == "" %} 
+								    			</br>"Title to be determined."</li>
+								    		{% else %}
+								    			</br>"{{ ms.title4 }}"</li>
+								    		{% endif %}
+								    	{% endif %}
+								    	
+								    	{% if ms.abstract4 %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<span class="hide-abstracts">
+									    			{{ ms.abstract4 }}
+									    		</span>
+									    	</article>
+								    	{% endif %}
+								    	
+							    	{% endif %}
+							    	
+							    	{% if ms.author5 %}
+								    	<li><a href="{{ ms.url | prepend: site.baseurl | replace: '//', '/' }}#author5"><strong class="card-body-subgroup">{{ ms.author5 }}</strong></a>
+								    	{% if ms.inst5 %} 
+								    		<em>{{ ms.inst5 }}</em>
+								    	{% endif %}
+								    	{% if ms.title5 %}
+								    		{% if ms.title5 == "" %} 
+								    			</br>"Title to be determined."</li>
+								    		{% else %}
+								    			</br>"{{ ms.title5 }}"</li>
+								    		{% endif %}
+								    	{% endif %}
+								    	
+								    	{% if ms.abstract5 %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<span class="hide-abstracts">
+									    			{{ ms.abstract5 }}
+									    		</span>
+									    	</article>
+								    	{% endif %}
+								    	
+							    	{% endif %}
+							    	
+							    	{% if ms.author6 %}
+								    	<li><a href="{{ ms.url | prepend: site.baseurl | replace: '//', '/' }}#author6"><strong class="card-body-subgroup">{{ ms.author6 }}</strong></a>
+								    	{% if ms.inst6 %} 
+								    		<em>{{ ms.inst6 }}</em>
+								    	{% endif %}
+								    	{% if ms.title6 %}
+								    		{% if ms.title6 == "" %} 
+								    			</br>"Title to be determined."</li>
+								    		{% else %}
+								    			</br>"{{ ms.title6 }}"</li>
+								    		{% endif %}
+								    	{% endif %}
+								    	
+								    	{% if ms.abstract6 %}
+									    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+									    		<span class="hide-abstracts">
+									    			{{ ms.abstract6 }}
+									    		</span>
+									    	</article>
+								    	{% endif %}
+								    	
+							    	{% endif %}
+							    	
+					    		</ul>
+								</p>
+						  </div>
+						</div>
+					</div>
+				</div>	
+		{% endif %}
+  {% endif %}		    	
+{% endfor %}

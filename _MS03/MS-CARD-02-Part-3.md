@@ -1,0 +1,42 @@
+---
+layout: group
+author: smb2025
+subgroup: "CARD"
+subgroup-long: "CARD-02"
+title: "Novel multiscale and multisystem approaches to cardiovascular modeling and simulation"
+organizers: "Mitchel J. Colebank (University of South Carolina), Vijay Rajagopal, The University of Melbourne, Australia"
+description: "Cardiovascular models are now recognized as a potential frontier in the development of personalized models and digital twins. This new excitement in the field is fueling new strides in mathematical and computational approaches to describe cardiovascular function across different temporal and/or spatial scales. In addition, new multisystem models accounting for how the heart and vasculature interact with other organ systems are being developed in combination with tools located at the heart of data science. Thus, this minisymposium will focus on the development of cardiovascular models that mimic cardiovascular function across spatial or temporal scale, new models that couple the cardiovascular system with other physiological systems, and new innovations in data-driven solutions to modeling cardiovascular phenomena. Potential topics include:
+- Multiscale models of cardiac and vascular function;
+- Computational approaches to cell-tissue-organ level function;
+- Mathematical coupling of cardiac and vascular mechanics;
+-  Modeling autonomic control and neurovascular function;
+- Simulating tissue growth and remodeling;
+- Multisystems models of cardiovascular-organ interactions; and
+- Physics-informed data science approaches to cardiovascular science"
+room: "Salon 4"
+code: "MS03"
+part: "3"
+codes: [MS01/MS-CARD-02-Part-1, MS02/MS-CARD-02-Part-2]
+author1: "Mette Olufsen"
+title1: "An uncertainty aware framework for generating vascular networks from imaging"
+inst1: "North Carolina State University"
+dept1: "Department of Mathematics"
+abstract1: "A well-calibrated mathematical model and an understanding of uncertainties in model predictions are essential for generating a digital twin. Creating a patient-specific cardiovascular model typically involves two key steps: (i) constructing the vascular domain and (ii) performing hemodynamic simulations. The vascular domain is usually obtained by segmenting CT or MRI scans to reconstruct the vascular network. Once constructed, hemodynamic simulations are conducted using inferred model parameters that minimize discrepancies between computed results and available physiological data. This talk will addres challenges in generating 1D network models with multiple branching generations and detecting abnormalities within these networks. One significant challenge is the automatic extraction of vessel centerlines, which is crucial for 1D modeling. We focus on a skeletonization-based method for centerline extraction, which iteratively removes voxels until only a single-voxel-wide path remains within each vessel. Using statistical change-point analysis, we construct a labeled directed graph (a tree) that encodes vessel connectivity, radii, and lengths. By sampling from normal distributions of these quantities with a 1D fluid dynamics model, we explore how uncertainties in geometry affect hemodynamic predictions. Our results emphasize the importance of accounting for image-based uncertainty in medical modeling."
+author2: "Schuyler Brennan"
+title2: "Modeling the impact of venous collapsibility on retinal blood flow"
+inst2: "University of Delaware"
+dept2: "Mathematics"
+abstract2: "Glaucoma is a leading cause of blindness worldwide that is characterized by progressive loss of retinal ganglion cells and irreversible vision loss. In addition to elevated intraocular pressure (IOP), impaired ocular blood flow and metabolism defects have been identified in primary open angle glaucoma. Here, a mathematical model is developed to predict the impact of venous collapsibility on retinal hemodynamics when IOP is elevated.  In the model, the venules are represented as Starling resistors to allow for venous collapsibility when external pressure is higher than internal vascular pressure. The model also accounts for mechanistic flow regulation and oxygen transport.  The model predicts the influence of venous collapsibility on blood flow autoregulation at baseline and elevated levels of IOP (15 mmHg and 25 mmHg, respectively).  At baseline IOP, the autoregulation plateau occurs for a pressure range of 28-44 mmHg.  The plateau is shifted to a slightly higher pressure range when IOP is elevated without venous collapsibility and to a much higher pressure range of 40-52 mmHg when IOP is elevated with venous collapsibility, indicating that the capacity for autoregulation is reduced at physiological pressures.  Correspondingly, resistance in the large and small venules is increased at elevated levels of IOP but remains constant when venules are treated as fixed resistances.  As expected, resistance increases in large and small arterioles over the autoregulation range of pressures.  Accounting for venous collapsibility in the model yields predictions that suggest elevated IOP impairs the autoregulation range, possibly leading to detrimental hemodynamic effects observed in glaucoma."
+author3: "Simon Walker-Samuel"
+title3: "Using physics-informed deep generative learning to model blood flow in the retina"
+inst3: "University College London"
+dept3: "Centre for Computational Medicine"
+abstract3: "Disruption of retinal vasculature is linked to various diseases, including diabetic retinopathy and macular degeneration, leading to vision loss. We present here a novel algorithmic approach that generates highly realistic digital models of human retinal blood vessels, based on established biophysical principles, including fully-connected arterial and venous trees with a single inlet and outlet. This approach, using physics-informed generative adversarial networks (PI-GAN), enables the segmentation and reconstruction of blood vessel networks with no human input and which out-performs human labelling. Segmentation of DRIVE and STARE retina photograph datasets provided near state-of-the-art vessel segmentation, with training on only a small (n = 100) simulated dataset. Our findings highlight the potential of PI-GAN for accurate retinal vasculature characterization, with implications for improving early disease detection, monitoring disease progression, and improving patient care."
+author4: "Mitchel Colebank"
+title4: "Effects of vasomotor tone on systemic vascular wave reflections"
+inst4: "University of South Carolina"
+dept4: "Department of Mathematics & Department of Biomedical Engineering"
+abstract4: "One-dimensional, pulse-wave propagation models are able to replicate hemodynamic waveforms that are representative of measured data. While these models are a potential tool in the era of digital twins, few models have considered the role of smooth muscle vasoactivity and its effects on blood pressure and flow. This is especially important for understanding cerebrovascular function, especially in diseases like dementia and Alzheimer's, where cerebral vasoactivity is known to be a cause and consequence of altered mechanical stimuli. Thus, there is a need for new computational models that explicitly account for vascular tone during hemodynamic simulation. 
+
+Here, we implement a relatively simplistic exponential model of the proximal vasculature pressure-area relationship which incorporates extracellular matrix stiffness, vascular smooth muscle cell stiffness,  the degree of vasomotor tone in comparison to some reference tone, and the reference pressure. We couple this vasoactive large vessel model to the structured tree boundary condition, which represents the microvascular beds. To differentiate between proximal and small vessel vasoconstriction, we also introduce a vasodilation factor in the structured tree that controls microvascular radii. We analyze the model using global sensitivity analysis, and provide insight into the distinct contributions of large and small vessel vasoactivity in an idealized systemic arterial network. Our results show that microvascular vasoconstriction is more impactful that proximal vessel vasotone, but that stress-strain behavior in the large vessels can be modulated divergently depending on the relative magnitudes of ECM and smooth muscle stiffness. This study lays the foundation for future studies investigating the effects of vasoactivity on hemodynamic outcomes."
+---

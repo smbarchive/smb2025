@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{page.title}} | {{site.name}}</title>
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+
+		<!-- Twitter card validator -->
+		<meta name="twitter:card" content="summary_large_image">
+	    <meta name="twitter:site" content="@smb__2025">
+		<meta name="twitter:creator" content="@smb__2025">
+		<meta name="twitter:title" content="{{page.title}}">
+		<meta name="twitter:description" content="The Society for Mathematical Biology annual meeting - 2025.">
+		<meta name="twitter:image" content="http://2025.smb.org/assets/images/twitter.png">
+		
+		<meta name="description" content="The Society for Mathematical Biology annual meeting - 2025." />
+		
+		<meta property="og:title" content="{{page.title}}" />
+		<meta property="og:description" content="The Society for Mathematical Biology annual meeting - 2025." />
+		<meta property="og:image" content="http://2025.smb.org/assets/images/twitter.png"/>
+
+
+
+		
+		<meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
+    
+		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom.css">
+
+
+
+    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
+    <script src="{{site.baseurl}}/assets/js/custom.js"></script>
+
+	<META NAME="robots" CONTENT="noindex">
+
+	{% if page.hide %}
+		<META NAME="robots" CONTENT="noindex">
+	{% endif %}
+
+</head>
+
+<body class="{% if page.url == "/" %} homefirstpage {% endif %}">
+  
+	<nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+	  <div class="container">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarColor02">
+		    <ul class="navbar-nav mr-auto d-flex align-items-center">
+			    <li class="nav-item"> <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/images/logo.png" width="40" alt="" class="d-inline-block align-middle mr-2"></a> </li>
+					<a class="navbar-brand" href="{{site.baseurl}}/"><strong>{{site.name}}</strong></a>
+		      {% include menu-header.html %}
+		    </ul>
+		    
+		  </div>
+	  </div>
+	</nav>
+	
+	<hr>
+	
+
+
+    
+
+    <!-- Search Results -->
+    <div id="lunrsearchresults">
+        <ul class="mb-0"></ul>
+    </div>
+
+    <!-- Content -->
+    <main role="main" class="site-content" style="margin-bottom: 300px;">
+        {{ content }}
+    </main>
+
+
+    <!-- Scripts: popper, bootstrap, theme, lunr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+	<script src="{{site.baseurl}}/assets/js/theme.js"></script>
+
+</body>
+
+</html>

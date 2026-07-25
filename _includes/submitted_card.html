@@ -1,0 +1,532 @@
+{% assign ms = include.thisMS %}
+<div class="card">
+		
+		{% if ms.code %} 
+  			<h5 class="card-header card-header-subgroup {{ms.subgroup}}"><small>{{ms.code}}-{{ms.subgroup-long}}: </small></br>{{ ms.title }}</h5>
+  		{% else %}
+		  	<h5 class="card-header card-header-subgroup {{ms.subgroup}}"><small>{{ms.subgroup-long}}: </small></br>{{ ms.title }}</h5>
+  		{% endif %}
+  	
+  <div class="card-body" style="padding-top:0px; padding-bottom:0px;">
+    <p class="card-text" style="margin-bottom:0px;">
+	    
+
+	    {% if page.poster %}
+	    	<h4 id="author1">{{ page.author }}</h4>
+	    	{% if page.inst %} 
+	    		<em>{{ page.inst }}</em>
+	    	{% endif %}
+	    	
+	    	{% if page.title %}
+	    		{% if page.title == "" %} 
+	    			<h6>"Title to be determined."</h6>
+	    		{% else %}
+	    			<h6>"{{ page.title }}"</h6>
+	    		{% endif %}
+	    	{% endif %}
+	    	
+	    	
+	    	{% if page.abstract %}
+	    		<article class="article-post text-justify" style="font-size:12px;">
+		    		{% if page.abstract == "" %} 
+		    			Abstract to be determined. Please check back later.
+		    		{% else %}
+		    			{{ page.abstract }}
+		    		{% endif %}
+	    		</article>
+	    	{% endif %}
+				
+	    {% endif %}
+	    
+	    
+	    	{% if ms.organizers %}
+				<strong>Organized by:</strong> {{ms.organizers}}
+				
+				{% if ms.code2 %}
+					</br>
+					<small>Note: this minisymposia has multiple sessions. The other session is <strong>{{ms.code2}}-{{ms.subgroup-long}}</strong>.					
+					
+					</small>
+				{% endif %}
+				</br>
+			{% endif %}
+			
+			<ol>
+	    	{% if ms.author1 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author1 }}</strong>
+		    	{% if ms.inst1 %} 
+		    		<em>{{ ms.inst1 }}</em>
+		    	{% endif %}
+		    	{% if ms.title1 %}
+		    		{% if ms.title1 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title1 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract1 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract1 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+		    {% endif %}
+		    
+		    {% if ms.author2 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author2 }}</strong>
+		    	{% if ms.inst2 %} 
+		    		<em>{{ ms.inst2 }}</em>
+		    	{% endif %}
+		    	{% if ms.title2 %}
+		    		{% if ms.title2 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title2 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract2 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract2 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+		    {% endif %}
+		    
+		    {% if ms.author3 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author3 }}</strong>
+		    	{% if ms.inst3 %} 
+		    		<em>{{ ms.inst3 }}</em>
+		    	{% endif %}
+		    	{% if ms.title3 %}
+		    		{% if ms.title3 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title3 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract3 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract3 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+		    {% endif %}
+		    
+		    {% if ms.author4 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author4 }}</strong>
+		    	{% if ms.inst4 %} 
+		    		<em>{{ ms.inst4 }}</em>
+		    	{% endif %}
+		    	{% if ms.title4 %}
+		    		{% if ms.title4 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title4 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract4 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract4 }}
+			    		</div>
+			    	</article>
+			    {% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+	    	
+	    	{% if ms.author5 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author5 }}</strong>
+		    	{% if ms.inst5 %} 
+		    		<em>{{ ms.inst5 }}</em>
+		    	{% endif %}
+		    	{% if ms.title5 %}
+		    		{% if ms.title5 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title5 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract5 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract5 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+	    	
+	    	{% if ms.author6 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author6 }}</strong>
+		    	{% if ms.inst6 %} 
+		    		<em>{{ ms.inst6 }}</em>
+		    	{% endif %}
+		    	{% if ms.title6 %}
+		    		{% if ms.title6 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title6 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract6 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract6 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author7 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author7 }}</strong>
+		    	{% if ms.inst7 %} 
+		    		<em>{{ ms.inst7 }}</em>
+		    	{% endif %}
+		    	{% if ms.title7 %}
+		    		{% if ms.title7 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title7 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract7 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract7 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author8 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author8 }}</strong>
+		    	{% if ms.inst8 %} 
+		    		<em>{{ ms.inst8 }}</em>
+		    	{% endif %}
+		    	{% if ms.title8 %}
+		    		{% if ms.title8 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title8 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract8 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract8 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author9 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author9 }}</strong>
+		    	{% if ms.inst9 %} 
+		    		<em>{{ ms.inst9 }}</em>
+		    	{% endif %}
+		    	{% if ms.title9 %}
+		    		{% if ms.title9 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title9 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract9 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract9 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author10 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author10 }}</strong>
+		    	{% if ms.inst10 %} 
+		    		<em>{{ ms.inst10 }}</em>
+		    	{% endif %}
+		    	{% if ms.title10 %}
+		    		{% if ms.title10 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title10 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract10 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract10 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author11 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author11 }}</strong>
+		    	{% if ms.inst11 %} 
+		    		<em>{{ ms.inst11 }}</em>
+		    	{% endif %}
+		    	{% if ms.title11 %}
+		    		{% if ms.title11 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title11 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract11 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract11 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author12 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author12 }}</strong>
+		    	{% if ms.inst12 %} 
+		    		<em>{{ ms.inst12 }}</em>
+		    	{% endif %}
+		    	{% if ms.title12 %}
+		    		{% if ms.title12 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title12 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract12 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract12 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author13 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author13 }}</strong>
+		    	{% if ms.inst13 %} 
+		    		<em>{{ ms.inst13 }}</em>
+		    	{% endif %}
+		    	{% if ms.title13 %}
+		    		{% if ms.title13 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title13 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract13 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract13 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author14 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author14 }}</strong>
+		    	{% if ms.inst14 %} 
+		    		<em>{{ ms.inst14 }}</em>
+		    	{% endif %}
+		    	{% if ms.title14 %}
+		    		{% if ms.title14 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title14 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract14 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract14 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author15 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author15 }}</strong>
+		    	{% if ms.inst15 %} 
+		    		<em>{{ ms.inst15 }}</em>
+		    	{% endif %}
+		    	{% if ms.title15 %}
+		    		{% if ms.title15 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title15 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract15 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract15 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+
+			{% if ms.author16 %}
+		    	<li><strong class="card-body-subgroup">{{ ms.author16 }}</strong>
+		    	{% if ms.inst16 %} 
+		    		<em>{{ ms.inst16 }}</em>
+		    	{% endif %}
+		    	{% if ms.title16 %}
+		    		{% if ms.title16 == "" %} 
+		    			</br>"Title to be determined."</li>
+		    		{% else %}
+		    			</br>"{{ ms.title16 }}"</li>
+		    		{% endif %}
+		    	{% endif %}
+		    	
+		    	{% if ms.abstract16 %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			{{ ms.abstract16 }}
+			    		</div>
+			    	</article>
+		    	{% else %}
+			    	<article class="article-post text-justify" style="font-size:12px; margin-bottom: 10px; margin-top: 10px;">
+			    		<div class="hide-abstracts">
+			    			Abstract to be determined.
+			    		</div>
+			    	</article>
+		    	{% endif %}
+		    	
+	    	{% endif %}
+	    	
+  		</ol>
+  		
+  		
+  		
+		</p>
+  </div>
+  
+  <div class="card-footer text-muted">
+    {% if ms.room %}
+    	<strong>Room assignment: </strong> {{ms.room}}
+    {% endif %}
+  </div>
+  
+</div>

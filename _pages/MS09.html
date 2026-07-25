@@ -1,0 +1,87 @@
+---
+title: "Minisymposia: MS09"
+code: "MS09"
+layout: default
+pagination:
+    enabled: false
+description: "The Society for Mathematical Biology - Annual Meeting 2025."
+permalink: /MS09/
+---
+
+
+<div class="container">
+	
+	<div class="col-md-12 main-loop">
+    <div class="row">
+      <div class="col-md-12  text-center">
+<!--         {% include banner.html %} -->
+        <h1 class="mb-3">{{page.title}}</h1>
+        <h4>{{site.authors.esmb[page.code]}}</h4>
+      </div>
+    </div>
+	</div>
+
+	<div class="row mt-3">   
+		<div class="col-md-12 main-loop">
+			
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem parallel position-relative">
+		    <div class="pl-4 pr-0 h-100 tofront">
+		        <div class="row justify-content-between">
+		            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+		                <h1 class="mb-3" id="{{page.code}}">{{page.title}}</h1>
+		                {% for ms in site.MS09 %}
+							<div class="row subgroup-name">
+								<div class="col-12">
+									{% include ms_card.html thisMS=ms %}
+								</div>
+							</div>
+						{% endfor %}
+		            </div>             
+		        </div>
+		    </div>
+			</div>
+			{% include footer.html %}
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+<!---
+	<div class="alertbar">
+	    <div class="container">
+	        <div class="row prevnextlinks small font-weight-bold">
+		            <div class="col-12 text-center pl-0">		            
+							<span class="click-legend" id="switch-text" onclick="abstractsHide()">
+								Click to show abstracts
+							</span>
+				            </br>
+							<hr>
+							<small>
+								{{page.title}}
+								</br>
+								{{site.authors.esmb[page.code]}}
+							</small>        
+		            </div>
+	        </div>
+	    </div>
+	</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

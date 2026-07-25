@@ -1,0 +1,196 @@
+---
+layout: default
+---
+{% assign author = site.authors.esmb %}
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+              <span class="catlist">
+              {% if page.subgroup %}
+              	<span class="text-{{page.subgroup}}">{{page.subgroup}}</span>		
+              {% else %}
+              	<span class="text-SMB">SMB2025</span>		
+              {% endif %}
+              	</br><span class="text-OTHE">University of Alberta</span>
+              </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+					{% if page.prize-name %}
+						<h3>{{ page.prize-name }}</h3></br>
+					{% endif %}
+					{% if page.introduced %}
+						<small>Introduced by: <strong>{{ page.introduced }}</strong></small></br>
+					{% endif %}</br>
+					{% if page.time %}
+						<h6>{{ page.time }}</h6></br>
+					{% endif %}
+					<div class="d-flex align-items-center">
+            {% if page.author-image %}
+            	<img class="rounded-circle" src="../{{page.author-image}}" alt="{{page.speaker}}" width="70"/>
+            {% endif %}
+            
+            
+            
+            
+						<small class="ml-3"> 
+							{% if page.author-url %}
+								<span><a target="_blank" href="{{ page.author-url }}" target="_blank" class="btn btn-outline-success btn-sm btn-round ml-1">{{ page.speaker }}</a></span>
+							{% endif %}
+							{% if page.author-twitter %}
+								<span><a target="_blank" href="{{ page.author-twitter }}" target="_blank"class="btn btn-outline-success btn-sm btn-round ml-1">Follow on Twitter</a></span>
+							{% endif %}
+							{% if page.prize-url %}
+								<span><a target="_blank" href="{{ page.prize-url }}" target="_blank"class="btn btn-outline-success btn-sm btn-round ml-1">{{ page.prize-name }}</a></span>
+							{% endif %}
+			               <span class="text-muted d-block mt-1">{{ page.time }} during the "Plenary-{{page.numbering}}" time block. </br> Room assignment: coming soon.</span>
+
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
+        
+        <!-- Share -->
+				<div class="col-lg-2 pr-4 mb-4 col-md-12">
+					<div class="sticky-top sticky-top-offset text-center">
+						<div class="text-muted">
+							Share this
+						</div>
+						<div class="share d-inline-block">
+							<!-- AddToAny BEGIN -->
+							<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+								<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+								<a class="a2a_button_facebook"></a>
+								<a class="a2a_button_twitter"></a>
+							</div>
+							<script async src="https://static.addtoany.com/menu/page.js"></script>
+							<!-- AddToAny END -->
+						</div>
+					</div>
+				</div>
+        
+        
+		<div class="col-md-12 col-lg-10">
+			
+			<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem {{page.subgroup}} position-relative">
+		    <div class="pl-4 pr-0 h-100 tofront">
+		        <div class="row justify-content-between">
+		            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+			            	
+			            
+		                <h4><strong>
+			              	{% if page.numbering == '00' %}
+			                	Plenary-Sunday
+			                {% else %}
+			                	Plenary-{{page.numbering}}
+			                {% endif %}
+			              </strong>
+		                {% if page.prize-name %}
+											: {{ page.prize-name }}
+										{% endif %}
+		                </h4></br>
+	                	<h1 class="mb-3">{{ page.speaker }}</h1>
+		                {% if page.affiliation %}
+		                	<h6><strong>{{page.affiliation}}</strong></h6> 
+		                {% endif %}
+		                {% if page.institution %}
+		                	<h6>{{page.institution}}</h6> 
+		                {% endif %}
+		                {% if page.abstract %}
+		                	<p><strong>Abstract</strong>:</p> 
+		                	<p>{{page.abstract}}</p>
+			              {% endif %}
+			              
+			              {% if page.best-paper-title %}
+				              	<hr>
+					              <div class="d-flex align-items-center">
+													<h4>Best paper:</h4>
+													<span>
+														<small class="ml-3">
+															<a target="_blank" href="{{ page.best-paper-url }}" target="_blank" class="btn btn-outline-success btn-sm btn-round ml-1">Link to best paper</a>
+														</small>
+													</span>			
+					              </div>				
+											
+				              	<p>Paper: "<em>{{page.best-paper-title}}</em>" by <strong>{{ page.best-paper-authors }}</strong></p>
+				              {% endif %}
+				              
+				              {% if page.best-paper-talk-title %}
+			                	<h4 class="text-EDUC">{{page.best-paper-talk-title}}</h4>
+				              {% endif %}
+				              
+				              {% if page.best-paper-talk-abstract %}
+			                	<p>{{page.best-paper-talk-abstract}}</p>
+				              {% endif %}
+				              
+				              
+				              
+
+		            </div>             
+		        </div>
+		    </div>
+			</div>
+			</br>
+			</br>
+							    
+	      
+			<!-- Author Box -->
+      {% if author %}				
+			<div class="row mt-5">
+				<div class="col-md-2 align-self-center">
+                       {% if author.avatar %}
+<!--                       <img class="rounded-circled" src="../{{author.avatar}}" alt="{{author.name}}" width="90"/> -->
+						<img src="../{{author.avatar}}" alt="{{author.name}}" width="90"/>
+                      {% endif %} 
+				</div>
+				<div class="col-md-10">		
+                      <h5 class="font-weight-bold">Hosted by {{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
+					{{ author.bio }}					
+				</div>
+			</div>				
+      {% endif %}
+      
+      <!-- Comments -->
+      {% if page.comments != false %}
+          {% include comments.html %}
+      {% endif %}
+            
+		</div>
+        
+        
+	</div>
+</div>
+
+
+
+<!-- Alertbar Prev/Next -->
+<!--
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+          {% if page.previous.url %}
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="..{{ page.previous.url }}">{% if page.previous.image %} <img height="30px" class="mr-1" src="../{{page.previous.image}}"> {% endif %} {{page.previous.title}}</a>
+            </div>
+          {% endif %}
+          {% if page.next.url %}
+            <div class="col-md-6 text-right pr-0">
+                <a class="text-dark" href="..{{ page.next.url }}"> {{page.next.title}} {% if page.next.image %} <img height="30px" class="ml-1" src="../{{page.next.image}}"> {% endif %}</a>
+            </div>
+          {% endif %}
+        </div>
+    </div>
+</div>
+-->

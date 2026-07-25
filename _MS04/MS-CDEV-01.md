@@ -1,0 +1,36 @@
+---
+layout: group
+author: smb2025
+subgroup: "CDEV"
+subgroup-long: "CDEV-01"
+title: "Mathematical and computational ophthalmology: insights from data-driven multiscale modelling of the eye"
+organizers: "Laura Wadkin (Newcastle University), Patrick Parkinson (Newcastle University)"
+description: "Mathematical ophthalmology is a novel and rapidly evolving interdisciplinary field in which diverse techniques across mathematics are applied to deepen our understanding of the formation, structure, and function of the eye during development, health, and disease. Mathematical and computational models are driving technological advances in diagnostic tools for clinicians, predicting and monitoring disease progression, and deepening our understanding of the physiology of the eye.
+
+In this mini-symposium, our speakers will present some of the cutting-edge research across this area, highlighting how mathematics can contribute to solving complex biological and medical problems. Themes covered will include (but not be limited to): harnessing clinical trial image data, quantifying diagnostic cellular characteristics, agent-based modelling, continuum modelling, collective cellular behaviours, wound healing, and ocular drug delivery."
+room: "Salon 19/20"
+code: "MS04"
+part: ""
+author1: "Laura Wadkin"
+title1: "Optimising stem cell therapies for corneal damage: insights from clinical trial image analysis"
+inst1: "Newcastle University"
+dept1: ""
+abstract1: "Limbal stem cell deficiency (LSCD) is an ocular disease characterized by a loss or deficiency of the stem cells in the limbus, which are vital for ensuring homeostasis of the corneal epithelium. When these stem cells are lost, the corneal epithelium breaks down becoming scarred and chronically inflamed, resulting in vision loss, chronic pain and photophobia. Treatment of LSCD takes the form of an ex-vivo cultured limbal stem cell (LSC) transplant into the affected eye. Although proven effective at restoring vision, much remains to be understood about the mechanics of corneal epithelium recovery following the LSC transplant.
+
+Our research aims to utilise the power of statistical image analysis and mathematical modelling to answer fundamental questions about the condition of the corneal epithelium in an LSCD affected eye, the proliferation and behaviours of LSCs following transplant, and how these behaviours result in the complete restoration of the corneal epithelium. Here, we analyse IVCM images from patients with total unilateral LSCD, taken before and after LSC transplant, to explore potential quantitative diagnostic and monitoring measures of the corneal recovery process."
+author2: "Joel Vanin"
+title2: "V-Cornea: A Multiscale Virtual Tissue Approach to Modeling Corneal Biology"
+inst2: "Biocomplexity Institute/Indiana University Bloomington"
+dept2: "Intelligent System Engineering"
+abstract2: "V-Cornea addresses key limitations in ocular irritation assessment methods through a computational framework for predicting corneal epithelial response to injury. Implemented in CompuCell3D, this agent-based model successfully simulates corneal epithelial homeostasis and recovery patterns following trauma or toxicant exposure. The model incorporates biologically-inspired rules governing cell behaviors (proliferation, differentiation, death) and critical signaling pathways including Epidermal Growth Factor (EGF). Our simulations accurately reproduce normal corneal architecture and predict healing timeframes of 3-5 days for slight and mild injuries, consistent with experimental observations. For moderate injuries involving basement membrane disruption, the model demonstrates extended recovery times and emergent structural disorganization that mimics recurrent corneal erosions. Our current work explores supplementary approaches to understand cellular responses to IL-1 signaling, particularly how contextual factors in the extracellular matrix influence diverse outcomes like death, proliferation, and differentiation. We're also investigating how barrier function loss in superficial cells relates to early corneal opacity through a dedicated hydration model. To make these computational tools accessible to non-programmers, we've developed a user-friendly graphical interface (GUI) that facilitates model parameter adjustment, simulation execution, and results visualization. This virtual-tissue approach, now more accessible through the GUI, shows promise for toxicological assessments and therapy optimization by providing a platform to test interventions across various injury scenarios."
+author3: "Patricia Lamirande"
+title3: "Mathematical modelling of ocular drug delivery using mean first passage time"
+inst3: "University of Oxford"
+dept3: "Mathematical Institute"
+abstract3: "Wet age-related macular degeneration is a progressive disease that can lead to severe visual impairment. Standard treatment involves repeated intraocular drug injections, typically administered monthly, highlighting the need to understand factors influencing drug retention and clearance. Mathematical modelling provides a powerful approach to studying these processes and can offer insights into the development of longer-lasting treatments. In this work, we present a mean first passage time (MFPT) modelling framework to investigate ocular pharmacokinetics and scaling relationships, examining the effects of injection location and anatomical variability. The MFPT quantifies the average time for a randomly diffusing particle to reach a target, making it well-suited for assessing drug distribution and clearance. We formulate a partial differential equation system describing the MFPT of a particle diffusing in a 3D finite domain, modelling the diffusion of ocular pharmaceutics in the eye. Our model quantifies how physiological and anatomical parameters influence the protein therapeutics kinetics (like vitreous half-life), compares interspecies and intraspecies variability, and evaluates the impact of injection site. We validate the modelling framework by comparing its predictions to detailed 3D anatomical scans of rabbit eyes and in vivo pharmacokinetics data from the same eyes, assessing its ability to capture key features of ocular drug transport."
+author4: "Eamonn Gaffney"
+title4: "Modelling aspects of ocular epithelial transport"
+inst4: "University of Oxford"
+dept4: ""
+abstract4: "Ion and water transport across epithelia in the eye play an important role in ocular homeostasis, regulating intraocular pressure, retinal adhesion and corneal transparency. However, as with all permeable cell layers, there is a complex coupling between ion transport, water transport, membrane potentials and osmosis for transport across ocular epithelia. Nonetheless, perturbing transport fluxes in the eye offers therapeutic avenues, for instance by reducing oedema in central serous retinopathy or controlling intra-ocular pressure in glaucoma, motivating a mechanism-based understanding of this transport. Hence, we develop models for water transport across ocular epithelia and investigate the detailed mechanism of how carbonic anhydrase inhibition, which is well-established in glaucoma treatments, influences water transport."
+---

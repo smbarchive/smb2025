@@ -1,0 +1,18 @@
+---
+layout: group
+author: smb2025
+subgroup: "MFBM"
+room: "Salon 17/18"
+code: "CT03"
+title: "MFBM-03 Contributed Talks"
+subgroup-long: "MFBM-03"
+author1: "Clark Kendrick Go"
+inst1: "Collaborative Analytics Group, Department of Mathematics, Ateneo de Manila University"
+title1: "Exploring Mathematical Techniques in Collective Behaviour and Decision Making in Animal Groups"
+abstract1: "Collective behaviour in animal groups are coordinated movements and interactions among members that aim to achieve a common goal. Whether these goals are for allocation of resources or defence from predators, the collective behaviour appears to be largely a group activity initiated by a member, known as the leader. In the absence of high-resolution spatio-temporal data, various qualitative studies offer a glimpse of how leader-follower interactions take place. For example, Nagy, et al., studied the average delay in response when pigeons change the direction inflight. Next, Bourjade, et al., studied the first mover and the succeeding order of movements of Przewalski's Horses. Furthermore, various studies on the collective motion in the animal kingdom offer mathematical models and infer how the interactions and decision making take place.  Important questions arise during an event of coordinated motion in animals. During such an event, do individuals move according to a certain set of natural rules? Or certain patterns form due to the influence of a leader? How is this influence measured? Finally, how is influence transferred to other members of the group? In this study, we discuss the role of information theory to quantitatively uncover leader-follower relationship in a horse group. Specifically, we introduce concepts from information theory, specifically global and local transfer entropy being applied to a harem of horses. We will discuss their definitions, and how these key concepts are used to support causation in events. We will then discuss some important implications on how this technique can be used to analyse collective motion where data is scarce."
+author2: "Ashlee Ford Versypt"
+inst2: "University at Buffalo, The State University of New York"
+title2: "A Multi-Cellular Network Model Predicts Changes in Glomerular Endothelial Structure in Diabetic Kidney Disease"
+abstract2: "Diabetic kidney disease (DKD) progression is often marked by early glomerular endothelial cell (GEC) dysfunction, including alterations in the fenestration size and number linked to impaired glomerular filtration. However, the cellular mechanisms regulating GEC fenestrations remain poorly understood due to limitations in existing in vitro models, challenges in imaging small fenestrations in vivo, and inconsistencies between in vitro and in vivo findings. This study used a logic-based protein-protein interaction network model with normalized Hill functions for dynamics to explore how glucose-mediated signaling dysregulation impacts fenestration dynamics in GECs. We identified key drivers of fenestration loss and size changes by incorporating signaling pathways related to actin remodeling, myosin light chain kinase, Rho-associated kinase, calcium, and VEGF and its receptor. The model predicted how hyperglycemia in diabetic mice leads to significant fenestration loss and increased size of fenestrations. We found that glycemic control in the pre-DKD stage mitigated signaling dysregulation but was less effective as DKD developed and progressed. The model suggested alternative disease intervention strategies to maintain fenestration structure integrity, such as targeting Rho-associated kinase, VEGF-A, NFκB, and actin stress fibers."
+chair: "Ashlee Ford Versypt"
+---

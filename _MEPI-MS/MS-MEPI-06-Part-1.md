@@ -1,0 +1,33 @@
+---
+layout: group
+author: smb2025
+subgroup: "MEPI"
+subgroup-long: "MEPI-06"
+title: "Recent Advances in Dynamics of Human Behavior and Epidemics"
+organizers: "Abba Gumel (University of Maryland), Alex Safsten, Alice Oveson (both University of Maryland)"
+description: "The recent COVID-19 pandemic has highlighted the critical role human behavior plays in the dynamics and control of infectious diseases.  The behavior changes with respect to the adherence or lack thereof to public health intervention and mitigation measures during this pandemic were triggered by factors such as the unprecedented burden of the disease, the epidemic of disease-related mis(dis)information, fear, polarization, peer influence, poor quality and inconsistency in public health messaging, etc.  Specifically, epidemiological models that do not explicitly account for these behavioral changes were seen to generally fail to capture the correct trajectory and burden of the pandemic (thereby not being able to make realistic or accurate forecasts).  This minisymposium brings together an interdisciplinary team of researchers to discuss and share ideas on the recent advances in designing, validating, and analyzing mathematical models that explicitly incorporate human behavior and socio-economic factors, and use these models to contribute to public health policy for controlling and mitigating the spread and burden of the disease.  Some of the topics to be addressed include metrics of human behavior changes, the role of heterogeneity in compliance to public health intervention and mitigation measures, the influence of social networks, the impact of mis(dis)information, and risk perception."
+room: "Salon 6"
+code: "MS02"
+part: "1"
+codes: [MS06/MS-MEPI-06-Part-2, MS08/MS-MEPI-06-Part-3]
+author1: "Navid Ghaffarzadegan"
+title1: "Pandemics and People: Modeling Outbreaks with Behavior in the Loop"
+inst1: "Virginia Tech"
+dept1: "Department of Industrial and Systems Engineering"
+abstract1: "From social distancing and vaccination in response to the perceived risk of infection to changes in Non-Pharmaceutical Interventions under economic pressures, human responses alter the outcomes of an epidemic outbreak. While recognized in theory, this realization is not reflected in current infectious disease models at large. A grand challenge for scientists is to incorporate more realistic behavioral assumptions about human response and to couple human behavior models and epidemic models to represent change in human behavior endogenously (within epidemic models). In a series of studies, we show that the endogenous representation of human behavior: 1) improves the accuracy of long-term projections, 2) sheds light on several challenging puzzles such as early convergence to the reproductive number of one and the observed large variations in mortality rates across different regions, and 3) offers a different perspective on the health vs. economy tradeoff during a pandemic. We tested the models using detailed epidemiological and behavioral data from over 100 countries and 50 US regions, covering several waves of the pandemic over time."
+author2: "Jane Heffernan"
+title2: "Modelling Positive and Negative Behaviour Change"
+inst2: "York University"
+dept2: "Department of Mathematics and Statistics"
+abstract2: "During an infectious disease outbreak, individuals can change their behaviour so as to minimize infection risk. Behaviour relaxation can also occur. We have developed models of increasing and decreasing behaviour change. We analyze the outcomes of behaviour change with respect to vaccine uptake and disease incidence and prevalence. COVID-19 is used as an example."
+author3: "Sefah Frimpong"
+title3: "COVID-19 Coupled Behaviour-Disease Model"
+inst3: "University of Waterloo"
+dept3: "Department of Applied Mathematics"
+abstract3: "Mathematical models have been widely used to understand the dynamics of diseases from infectious diseases to oncology. Many infectious disease models have generally helped to understand the behaviour of diseases and in making predictions. However, recent data shows that the dynamics of these diseases are influenced by the behaviour of the host population. With evidence of imitation dynamics amongst the host population affecting the transmission of the disease. This work establishes that coupled behaviour-disease models give more information about the disease and improve the predictive powers of the models. We illustrate this concept by applying a formulated coupled behaviour-disease model for the first year of the COVID-19 virus from selected countries and cities while parameter estimation is performed using an Approximate Bayesian Computation (ABC) approach. We examine the predictive power of a conventional deterministic SIR model and a coupled behaviour-disease model which takes into account the seasonality of the COVID-19 virus. Using an adjusted AIC statistical measure for model performance, we obtained a similar performance for both models with respect to fitting but observed the coupled model outperformed the disease model in forecasting. Also, the peak magnitude and duration for the second peak within the prediction period had the coupled model match closely with the data unlike the disease model."
+author4: "Binod Pant"
+title4: "Analyzing human behavior data and modeling the impact of human behavior on SARS-CoV-2 transmission dynamics"
+inst4: "Northeastern University"
+dept4: "Network Science Institute"
+abstract4: "The COVID-19 pandemic not only has profoundly impacted global health and socioeconomic systems, but has also significantly impacted human behavior toward adherence (or lack thereof) to public health intervention and mitigation measures implemented in communities around the world. However, a relatively small number of epidemiological models have attempted to assess the impact of human behavior on the dynamics of SARS-CoV-2 transmission. In addition, detailed characterizations of how population-level behaviors change over time during multiple disease outbreaks and spatial resolutions are not yet widely available. In this talk, a behavior-epidemiology model that incorporates multiple mechanisms of behavior change is presented. Data from 431,211 survey responses collected in the United States, between April 2020 and June 2022, are used to provide a description of how human behavior fluctuated during the first two years of the COVID-19 pandemic."
+---

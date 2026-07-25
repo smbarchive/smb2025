@@ -1,0 +1,37 @@
+---
+layout: group
+author: smb2025
+subgroup: "MFBM"
+subgroup-long: "MFBM-08"
+title: "Mathematical methods for biological shape data analysis"
+organizers: "Wenjun Zhao (UBC/Wake Forest University), Khanh Dao Duc (UBC)"
+description: "Advances in imaging have for the past few years revolutionized our understanding of biological processes, illustrated by the recent mapping of trillions of human cells, or the explosive rate at which thousands of new protein 3D structures are now determined every year. This unprecedented surge of new biological data yields various mathematical problems and challenges at multiple spatial and time scales for interpreting and analyzing morphological shapes and shape dynamics, which finds close connections to machine learning, statistics, and physics.
+
+In this context, our proposed mini-symposium focuses on the mathematical, physical, and statistical aspects of shapes that describe the morphologies of biological structures—from molecules and intracellular organelles to cells, tissues, and organs—and how new modeling tools in this field can help elucidate fundamental biological questions. Intended for a diverse audience of mathematicians, physicists, and computational and experimental biologists, the symposium will feature complementary talks covering multiple aspects of imaging data analysis, ranging from the interplay between cell shapes and fate to new discoveries in protein dynamics through Riemannian geometry. To foster collaboration, share insights, and educate junior scientists, we have invited a diverse panel of participants and speakers from various institutes and career stages, including graduate students, postdocs, and faculty members."
+room: "Salon 8"
+code: "MS06"
+part: ""
+author1: "Ashok Prasad"
+title1: "Static Shapes and Dynamic Networks: Morphological Analysis of Cellular Identity"
+inst1: "Colorado State University"
+dept1: ""
+abstract1: "Cell morphology offers a powerful and underutilized lens for understanding cellular identity, behavior, and state. While transcriptomic and proteomic profiling have revolutionized our capacity to characterize cells, quantitative morphological features can provide complementary insights into cell state and function. In this talk, I will present our recent work demonstrating that cells can be robustly classified using a range of morphological metrics derived from microscopy images. I will also discuss our ongoing efforts to develop morphological features that are sensitive to the dynamics of intracellular structures, such as the actin cytoskeleton and other dynamic polymer networks. We simulate the actin cytoskeleton, incorporating the action of molecular motors and cross-linkers, and look for features that are sensitive to different initial conditions and differences in temporal dynamics. Ultimately, we seek to build a framework in which cellular morphology is treated as a high-dimensional, information-rich signature of cell state. This work contributes to a broader vision of morphology-based phenotyping as a bridge between structure and function in living systems."
+author2: "Felix Zhou"
+title2: "Methods to identify causal links between morphology and cell signaling"
+inst2: "UT Southwestern"
+dept2: ""
+abstract2: "Form is function. Just as Darwin’s finches have beaks adapted to their ecological niche, so too do cell morphology associate with its function. Indeed, cell shape changes are widely used as a first clinical indicator of disease. Conventionally, we have thought of shape as downstream of a cell’s molecular processes. However, recently we have found that the shape of protrusions on cell surfaces might also directly drive signaling whereby changes to their properties, such as curvature and thickness dynamically in time, modify signaling cascades and ultimately affect fate. For example, we found a previously undescribed role of blebbing - dynamic hemispherical protrusions in melanoma cells to activate prosurvival signals and avoid the normal checkpoint program of programmed cell death – a prerequisite step for cancer metastasis. Causal investigation of shape and signaling is notoriously difficult due to the intricate feedback between the two. Notably, shape changes are a product of molecular signals. Consequently, we have been developing statistical causal inference techniques to systematically test for causal links between 3D cell shapes segmented from microscopy videos with jointly measured molecular signal intensities from fluorescent biosensors. Here, I will talk about 3 general computational frameworks we have developed to enable this: u-Segment3D to segment the 3D surface, leveraging pretrained generalist 2D segmentation models; u-Unwrap3D to bidirectionally map the segmented 3D surface to a 2D image; and u-InfoTrace to adapt 1D causal measures and test spatiotemporal causality in the 2D unwrapped images. I will demonstrate example application to diverse videos of 3D cell blebbing, cancer-immune cell interaction, and organoids."
+author3: "Qiyu Wang"
+title3: "Studying SARS-CoV2 spike protein heterogeneity from large Cryo-EM dataset with linear subspace method and path analysis"
+inst3: "UBC"
+dept3: ""
+abstract3: "Recent advances in single particle cryogenic electron microscopy (cryo-EM) have allowed to capture biomolecules in various conformations through large image datasets. However, interpreting and quantifying such conformational heterogeneity remain computationally challenging, leading to a variety of recent methods. In the context of SARS-CoV-2, we developed and implemented a pipeline to process large datasets (~ millions) of 2D images of spike proteins, and apply REgularized COVARiance estimator (RECOVAR), to project the images into a latent linear subspace. Our pipeline also includes new methods for trajectory inference and transport-based segmentation that facilitate data analysis, revealing specific transitions between multiple conformations of the receptor binding domains (RBDs) in SARS-Cov2 spike protein. Our study notably led us to discover a state with three RBDs up, as well as finding a cooperativity mechanism from states with one RBD up, that goes towards the closed state before transiting to the state with two RBD’s up, offering valuable insights into the conformational landscape of SARS-CoV-2."
+author4: "Luis F Pereira"
+title4: "Statistical shape analysis with Geomstats"
+inst4: "UCSB"
+dept4: ""
+abstract4: "Geomstats is an open-source Python package for computations and statistics on Riemannian manifolds. It provides object-oriented and extensively unit-tested implementations. Manifolds can be equipped with Riemannian metrics with associated exponential and logarithmic maps, geodesics, and parallel transport.
+Building on this general framework, the shape module implements widely used shape spaces, such as the Kendall shape space and elastic spaces of discrete curves and surfaces, by leveraging the abstract mathematical structures of group actions, fiber bundles, and quotient spaces.
+The Riemannian geometry tools enable users to compare, average, and interpolate between shapes belonging to a given shape space. These essential operations can then be used to perform statistics on shape data.
+In this talk, we will present the object-oriented implementation of the shape module along with illustrative examples and demonstrate its use in performing statistics on shape spaces."
+---
